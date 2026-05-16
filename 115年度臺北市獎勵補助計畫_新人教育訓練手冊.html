@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>115年度臺北市產業發展獎勵補助計畫 ─ 新人教育訓練手冊</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Noto Sans TC", sans-serif;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: #f4f6f9;
+    -webkit-text-size-adjust: 100%;
+}
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1001;
+    background: #1e3a5f;
+    color: #fff;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-toggle:hover { background: #2c5283; }
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.menu-overlay.active { display: block; }
+
+/* Layout */
+.container { display: flex; min-height: 100vh; }
+aside {
+    width: 280px;
+    background: #1e3a5f;
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 24px 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+aside h2 {
+    font-size: 16px;
+    padding: 0 20px 16px;
+    border-bottom: 1px solid #2c5283;
+    color: #ffd54f;
+    line-height: 1.4;
+}
+aside nav { margin-top: 12px; }
+aside nav a {
+    display: block;
+    padding: 10px 20px;
+    color: #d6e2ee;
+    text-decoration: none;
+    font-size: 14px;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+aside nav a:hover, aside nav a:active { background: #2c5283; color: #fff; border-left-color: #ffd54f; }
+aside nav a.sub { padding-left: 36px; font-size: 13px; color: #a8b8cc; }
+aside nav .chapter-title {
+    padding: 12px 20px 4px;
+    font-size: 12px;
+    color: #7a9bc4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+main {
+    margin-left: 280px;
+    flex: 1;
+    padding: 40px 56px;
+    max-width: calc(100% - 280px);
+}
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5283 100%);
+    color: #fff;
+    padding: 48px 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 16px rgba(30,58,95,0.2);
+}
+.hero .tag {
+    display: inline-block;
+    background: #ffd54f;
+    color: #1e3a5f;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.hero h1 { font-size: 32px; margin-bottom: 12px; line-height: 1.3; }
+.hero p { font-size: 16px; opacity: 0.9; }
+.hero .meta { margin-top: 20px; font-size: 14px; opacity: 0.8; }
+
+/* Sections */
+section { margin-bottom: 56px; scroll-margin-top: 20px; }
+h2.chapter {
+    font-size: 26px;
+    color: #1e3a5f;
+    padding: 16px 0 16px 20px;
+    border-left: 6px solid #ffd54f;
+    background: #fff;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+h3.section-title {
+    font-size: 20px;
+    color: #1e3a5f;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e3e8ef;
+}
+h4 {
+    font-size: 16px;
+    color: #2c5283;
+    margin: 20px 0 10px;
+}
+p { margin-bottom: 12px; }
+
+/* Cards */
+.card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+.card-grid .card {
+    margin: 0;
+    border-top: 4px solid #2c5283;
+}
+.card-grid .card h4 { margin-top: 0; color: #1e3a5f; font-size: 18px; }
+
+/* Boxes */
+.alert {
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 16px 0;
+    border-left: 4px solid;
+}
+.alert-warning { background: #fff8e1; border-color: #f9a825; color: #5d4e00; }
+.alert-info { background: #e3f2fd; border-color: #1976d2; color: #0d47a1; }
+.alert-danger { background: #ffebee; border-color: #c62828; color: #b71c1c; }
+.alert-success { background: #e8f5e9; border-color: #2e7d32; color: #1b5e20; }
+.alert strong { display: block; margin-bottom: 6px; font-size: 15px; }
+
+/* Tables */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 16px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    font-size: 14px;
+}
+.table-wrap table { margin: 0; box-shadow: none; min-width: 600px; }
+th { background: #1e3a5f; color: #fff; padding: 12px; text-align: left; font-weight: 600; }
+td { padding: 10px 12px; border-bottom: 1px solid #e3e8ef; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) { background: #f8fafc; }
+
+/* Process flow */
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+    align-items: stretch;
+}
+.flow-step {
+    flex: 1;
+    min-width: 180px;
+    background: #fff;
+    border: 2px solid #2c5283;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    text-align: center;
+}
+.flow-step .num {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background: #2c5283;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.flow-step h5 { color: #1e3a5f; font-size: 15px; margin-bottom: 6px; }
+.flow-step p { font-size: 13px; color: #555; margin: 0; }
+.flow-arrow {
+    display: flex;
+    align-items: center;
+    color: #2c5283;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Vertical flow */
+.vflow { margin: 20px 0; }
+.vflow-item {
+    background: #fff;
+    border-left: 4px solid #2c5283;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    position: relative;
+}
+.vflow-item .step-tag {
+    display: inline-block;
+    background: #2c5283;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.vflow-item h5 { color: #1e3a5f; font-size: 16px; margin-bottom: 6px; }
+.vflow-item p, .vflow-item ul { font-size: 14px; color: #444; }
+.vflow-item ul { margin-left: 20px; margin-top: 4px; }
+.vflow-item li { margin-bottom: 4px; }
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 4px;
+}
+.badge-time { background: #e3f2fd; color: #1565c0; }
+.badge-doc { background: #f3e5f5; color: #6a1b9a; }
+.badge-key { background: #fff8e1; color: #f57c00; }
+.badge-must { background: #ffebee; color: #c62828; }
+
+/* Lists */
+ul.clean, ol.clean { margin-left: 24px; margin-bottom: 12px; }
+ul.clean li, ol.clean li { margin-bottom: 6px; }
+
+/* Code-like */
+.template {
+    background: #f8fafc;
+    border: 1px dashed #c0ccdb;
+    padding: 16px;
+    border-radius: 6px;
+    font-family: "Consolas", monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 12px 0;
+    white-space: pre-wrap;
+    color: #2c3e50;
+}
+
+/* Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+}
+.stat {
+    background: linear-gradient(135deg, #fff 0%, #f0f5fa 100%);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 3px solid #2c5283;
+}
+.stat .num { font-size: 28px; font-weight: 700; color: #1e3a5f; }
+.stat .label { font-size: 13px; color: #666; margin-top: 4px; }
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding: 24px;
+    background: #1e3a5f;
+    color: #d6e2ee;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Print */
+@media print {
+    aside, .menu-toggle, .menu-overlay { display: none !important; }
+    main { margin-left: 0; max-width: 100%; padding: 20px; }
+    .hero { box-shadow: none; }
+    section { page-break-inside: avoid; }
+    .template, .card, table { page-break-inside: avoid; }
+}
+
+/* RWD - Tablet */
+@media (max-width: 1024px) {
+    aside { width: 240px; }
+    main { margin-left: 240px; padding: 32px 32px; }
+    .hero { padding: 36px 28px; }
+    .hero h1 { font-size: 26px; }
+    h2.chapter { font-size: 22px; }
+    h3.section-title { font-size: 18px; }
+}
+
+/* RWD - Mobile */
+@media (max-width: 768px) {
+    html { font-size: 15px; }
+    .menu-toggle { display: flex; }
+    aside {
+        width: 280px;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 16px rgba(0,0,0,0.3);
+    }
+    aside.active { transform: translateX(0); }
+    main {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 72px 16px 24px;
+    }
+    .hero {
+        padding: 28px 20px;
+        margin-bottom: 28px;
+        border-radius: 10px;
+    }
+    .hero .tag { font-size: 12px; padding: 3px 10px; }
+    .hero h1 { font-size: 22px; line-height: 1.35; }
+    .hero p { font-size: 14px; }
+    .hero .meta { font-size: 12px; margin-top: 14px; }
+
+    section { margin-bottom: 40px; }
+    h2.chapter {
+        font-size: 20px;
+        padding: 12px 0 12px 14px;
+        border-left-width: 5px;
+        margin-bottom: 18px;
+    }
+    h3.section-title { font-size: 17px; margin: 24px 0 12px; }
+    h4 { font-size: 15px; }
+
+    .card { padding: 18px; }
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .alert { padding: 14px 16px; }
+    .alert strong { font-size: 14px; }
+
+    /* Flow - stack vertically on mobile */
+    .flow {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .flow-step {
+        min-width: auto;
+        width: 100%;
+    }
+    .flow-arrow {
+        justify-content: center;
+        transform: rotate(90deg);
+        font-size: 20px;
+    }
+
+    .vflow-item { padding: 14px 16px; }
+    .vflow-item h5 { font-size: 15px; }
+    .vflow-item p, .vflow-item ul { font-size: 13px; }
+
+    /* Tables - allow horizontal scroll */
+    table { font-size: 13px; min-width: 0; }
+    th, td { padding: 8px 10px; }
+    /* Wrap raw tables in scroll container */
+    section table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    section table thead, section table tbody, section table tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    section table td, section table th {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    .template {
+        padding: 12px;
+        font-size: 12px;
+        line-height: 1.7;
+        overflow-x: auto;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .stat { padding: 14px 8px; }
+    .stat .num { font-size: 22px; }
+    .stat .label { font-size: 12px; }
+
+    .badge { font-size: 11px; padding: 2px 8px; }
+
+    footer { padding: 18px; font-size: 12px; }
+}
+
+/* RWD - Very small phones */
+@media (max-width: 380px) {
+    main { padding: 64px 12px 20px; }
+    .hero { padding: 22px 16px; }
+    .hero h1 { font-size: 19px; }
+    h2.chapter { font-size: 18px; }
+    .stats { grid-template-columns: 1fr; }
+    .card { padding: 14px; }
+}
+</style>
+</head>
+<body>
+
+<button class="menu-toggle" id="menuToggle" aria-label="開啟選單">☰</button>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="container">
+
+<aside id="sidebar">
+    <h2>新人教育訓練手冊<br><small style="font-size:13px;font-weight:normal;color:#a8b8cc;">115年度臺北市產業發展<br>獎勵補助計畫</small></h2>
+    <nav>
+        <div class="chapter-title">概述</div>
+        <a href="#overview">手冊使用說明</a>
+        <a href="#program-overview">計畫總覽</a>
+
+        <div class="chapter-title">第一篇 受理申請</div>
+        <a href="#ch1">1. 受理申請作業流程</a>
+        <a href="#ch1-flow" class="sub">1.1 申請與送件流程</a>
+        <a href="#ch1-check" class="sub">1.2 資格與文件審查</a>
+        <a href="#ch1-supplement" class="sub">1.3 補件通知</a>
+        <a href="#ch1-officialdoc" class="sub">1.4 公文處理（併案/勾稽/改審議）</a>
+
+        <div class="chapter-title">第二篇 計畫審查</div>
+        <a href="#ch2">2. 計畫審查作業</a>
+        <a href="#ch2-flow" class="sub">2.1 審查流程</a>
+        <a href="#ch2-initial" class="sub">2.2 初審意見製作</a>
+        <a href="#ch2-group" class="sub">2.3 分組審查</a>
+
+        <div class="chapter-title">第三篇 計畫審議</div>
+        <a href="#ch3">3. 計畫審議大會</a>
+        <a href="#ch3-flow" class="sub">3.1 審議作業流程</a>
+        <a href="#ch3-rules" class="sub">3.2 辦理原則</a>
+        <a href="#ch3-result" class="sub">3.3 核定結果通知</a>
+
+        <div class="chapter-title">第四篇 計畫管考</div>
+        <a href="#ch4">4. 計畫管考SOP</a>
+        <a href="#ch4-subsidy" class="sub">4.1 獎勵補貼請款</a>
+        <a href="#ch4-innovation" class="sub">4.2 創新補助第一期款</a>
+        <a href="#ch4-visit" class="sub">4.3 實地查訪</a>
+        <a href="#ch4-change" class="sub">4.4 計畫變更</a>
+        <a href="#ch4-close" class="sub">4.5 結案與第二期款</a>
+
+        <div class="chapter-title">第五篇 其他作業</div>
+        <a href="#ch5">5. 諮詢服務輔導</a>
+        <a href="#ch6">6. 計畫廣宣</a>
+        <a href="#ch7">7. 稽核SOP</a>
+        <a href="#ch8">8. 線上申請作業</a>
+        <a href="#ch9">9. 其他公文SOP</a>
+
+        <div class="chapter-title">附錄</div>
+        <a href="#appendix">關鍵時限與檢核清單</a>
+    </nav>
+</aside>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+    <span class="tag">新人必讀 · 教育訓練手冊</span>
+    <h1>115年度臺北市產業發展獎勵補助計畫<br>作業SOP教育訓練手冊</h1>
+    <p>本手冊整理自《115年度臺北市獎勵補助計畫作業手冊SOP》，提供新進同仁系統化、結構化的作業指引。</p>
+    <div class="meta">
+        編製單位：臺北市產業獎勵補助專案辦公室　|　版本：115年04月　|　適用對象：新進專案人員
+    </div>
+</div>
+
+<!-- 使用說明 -->
+<section id="overview">
+    <h2 class="chapter">手冊使用說明</h2>
+    <div class="card">
+        <h4>本手冊架構</h4>
+        <p>本手冊依照計畫生命週期切分為五大篇，建議新進同仁循序閱讀，建立完整作業流程概念：</p>
+        <div class="card-grid">
+            <div class="card">
+                <h4>第一篇 受理申請</h4>
+                <p>從廠商送件到正式受理的窗口作業</p>
+            </div>
+            <div class="card">
+                <h4>第二篇 計畫審查</h4>
+                <p>初審意見製作、分組審查會議辦理</p>
+            </div>
+            <div class="card">
+                <h4>第三篇 計畫審議</h4>
+                <p>審議委員大會作業、核定結果通知</p>
+            </div>
+            <div class="card">
+                <h4>第四篇 計畫管考</h4>
+                <p>請款、實地查訪、計畫變更、結案</p>
+            </div>
+            <div class="card">
+                <h4>第五篇 其他作業</h4>
+                <p>諮詢輔導、廣宣、稽核、線上申請、其他公文</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-info">
+        <strong>圖示說明</strong>
+        <span class="badge badge-time">時限</span> 標示作業時限
+        <span class="badge badge-doc">文件</span> 標示應備文件
+        <span class="badge badge-key">重點</span> 標示注意事項
+        <span class="badge badge-must">必做</span> 標示不可遺漏事項
+    </div>
+</section>
+
+<!-- 計畫總覽 -->
+<section id="program-overview">
+    <h2 class="chapter">計畫總覽</h2>
+    <h3 class="section-title">補助類別</h3>
+    <table>
+        <thead>
+            <tr><th>類別</th><th>申請資格摘要</th><th>計畫期程</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>創業補助</strong></td><td>設立登記之次日起一年內</td><td>不超過一年六個月、不短於八個月</td></tr>
+            <tr><td><strong>研發補助</strong></td><td>完成設立登記滿一年以上</td><td>不超過一年六個月、不短於八個月</td></tr>
+            <tr><td><strong>品牌建立補助</strong></td><td>完成設立登記滿一年以上</td><td>不超過一年六個月、不短於八個月</td></tr>
+            <tr><td><strong>創新育成補助</strong></td><td>依法登記或立案之學校，或主事務所設於本市之財團/社團法人</td><td>不超過二年、不短於八個月</td></tr>
+            <tr><td><strong>獎勵補貼</strong></td><td>第一類：中小企業投資創新等達百萬以上；第二類：新投資創立或一次增資擴充達八千萬以上</td><td>—</td></tr>
+        </tbody>
+    </table>
+    <div class="alert alert-info">
+        <strong>申請次數限制</strong>
+        申請人自申請日起一年內以申請2次為限（四類補助皆適用）。
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 第一篇 受理申請 -->
+<!-- ============================================ -->
+<section id="ch1">
+    <h2 class="chapter">1. 受理申請作業流程</h2>
+
+    <h3 class="section-title" id="ch1-flow">1.1 計畫申請與送件流程</h3>
+    <div class="flow">
+        <div class="flow-step"><span class="num">1</span><h5>檢具申請書件</h5><p>申請人備齊申請書、計畫書及附件文件</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span class="num">2</span><h5>窗口收件盤點</h5><p>依「申請文件自我檢核表」盤點是否齊全</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span class="num">3</span><h5>判斷處理</h5><p>齊全→掛號／缺件→補正或專員輔導</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step"><span class="num">4</span><h5>正式掛號</h5><p>建立送件名單、製作回覆表、蓋正本章</p></div>
+    </div>
+
+    <h4>三種處理路徑</h4>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">路徑A 文件齊全</span>
+            <h5>正式掛號 → 歸檔 → 進行書審作業</h5>
+            <ul>
+                <li>完成掛號之案件須至「○○○年度獎勵補助計畫-送件名單總表」建立資料</li>
+                <li>製作申請資格文件檢查回覆表列印2份</li>
+                <li>列印1份經濟部商業司公司資料查詢（含委託廠商及工廠登記）</li>
+                <li>廠商申請書正本右上角蓋印正本章及填寫計畫編號</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">路徑B 短期可補正</span>
+            <h5>限期補正（7天內）</h5>
+            <ul>
+                <li>需補件廠商請於7天內完成；未完成者寄發「一次告知單」</li>
+                <li>給予廠商2個禮拜時間補正</li>
+                <li>勾選應補齊證件或書表</li>
+                <li>補正公文函掛號後，請函文同仁協助拉長公文處理時間，2天內製作初審意見</li>
+                <li>同步以電子郵件通知（「補件通知單」）</li>
+                <li><span class="badge badge-must">必做</span>期限內未補正完成，發函駁回</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">路徑C 計畫不完整</span>
+            <h5>專員輔導</h5>
+            <ul>
+                <li>計畫內容不完整、缺件無法短期補正者</li>
+                <li>專案辦公室經詢問申請人意願，轉給輔導專員進行輔導</li>
+                <li>經輔導後再「檢具申請書提出申請」</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="section-title" id="ch1-check">1.2 申請資格及應備文件審查重點</h3>
+    <table>
+        <thead>
+            <tr><th>項目</th><th>適用類別</th><th>審查內容</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>一、申請資格</td><td>創業</td><td>設立登記之次日起一年內</td></tr>
+            <tr><td>一、申請資格</td><td>研發／品牌建立</td><td>完成設立登記滿一年以上</td></tr>
+            <tr><td>一、申請資格</td><td>創新育成</td><td>依法登記或立案之學校，或主事務所設於本市之財團/社團法人</td></tr>
+            <tr><td>二、申請期限</td><td>創業</td><td>計畫起始日不得早於申請日前三個月</td></tr>
+            <tr><td>二、申請期限</td><td>研發／品牌／育成</td><td>計畫執行前一日至前六個月內（起始日不得早於申請日）</td></tr>
+            <tr><td>三、計畫期程</td><td>創業/研發/品牌</td><td>不超過一年六個月為原則，不短於八個月</td></tr>
+            <tr><td>三、計畫期程</td><td>創新育成</td><td>不超過二年為原則，不短於八個月</td></tr>
+            <tr><td>四、申請次數</td><td>全部</td><td>申請人自申請日起一年內以2次為限</td></tr>
+        </tbody>
+    </table>
+
+    <h4>五、應檢附書表（共通）</h4>
+    <ul class="clean">
+        <li>申請書1份、計畫書1份及電子檔（依申請須知格式填寫完整）</li>
+        <li>公司／商業／學校／財（社）團法人核准設立或變更證明文件影本1份</li>
+        <li>外國公司：在台分公司設立登記表或變更表影本1份</li>
+        <li>最近一期「勞保繳費清單之投保人數資料」影本1份（未具勞保投保資格者可用就業保險、職災保險替代）</li>
+        <li>研發/品牌：最近三年會計師簽證財報；中小企業可用稅捐機關設置帳載資料編製之財報</li>
+        <li>研發/品牌/育成：最近一年「營利事業所得稅結算申報書」與「營業稅申報書」影本1份</li>
+        <li>研發/品牌：市場營運實績或新增資相關證明文件、第三方試營運驗證證明文件</li>
+        <li>公職人員及關係人身分關係揭露表（須蓋與公司登記相同之大小章）</li>
+    </ul>
+
+    <h4>六、其他審查重點</h4>
+    <ul class="clean">
+        <li>計畫主持人與財務會計<strong>不得由同一人擔任</strong></li>
+        <li>計畫聯絡人須為正式員工</li>
+        <li>投資人資格符合「臺北市產業發展自治條例」第3條及第10條規定</li>
+        <li>經費依「臺北市產業發展各類補助（貼）計畫會計科目編列原則查核準則」編列</li>
+    </ul>
+
+    <h3 class="section-title" id="ch1-supplement">1.3 補件通知</h3>
+    <h4>三種通知方式</h4>
+    <div class="card-grid">
+        <div class="card"><h4>系統通知</h4><p>透過獎補系統發出通知</p></div>
+        <div class="card"><h4>EMAIL通知</h4><p>使用補件通知Email範本</p></div>
+        <div class="card"><h4>公文通知</h4><p>正式以一次告知單發文</p></div>
+    </div>
+
+    <h4>Email 範例</h4>
+    <div class="template">主旨：【補件通知】臺北市產業發展獎勵補助計畫-○○○○○○公司
+
+○○先生/小姐 您好：
+
+貴公司申請之「○○○○○○計畫」已於○○年○○月○○日正式送件掛號，
+經計畫辦公室檢閱後須請貴公司補件內容如下：
+1. ○○○○○○○
+2. ○○○○○○○
+
+以下為計畫書修正處
+1. ○○○○○○○
+2. ○○○○○○○
+
+以上補正文件均需蓋印經濟部商工登記之公司大小章
+計畫書內頁請列印抽換部分，申請書及計畫書封面的期間須重新修正用印
+請於○○月○○日完成補件，以免逾期而被退件，影響您申請補助之權益。
+如有任何問題請與我聯繫（1999轉6625），謝謝！
+
+臺北市產業獎勵補助辦公室</div>
+
+    <h4>初審公文補件及催繳機制</h4>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag badge-time">10個工作日</span>
+            <h5>首次收件後 → 審認是否需補件</h5>
+            <p>同步發送【第一次】一次告知單，限期申請人於 <strong>10個工作日內</strong> 完成補正及回復。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag badge-time">5個工作日</span>
+            <h5>第一次期限屆滿仍未補件 → 第二次催繳</h5>
+            <p>發送【第二次】一次告知單，限期申請人於 <strong>5個工作日內</strong> 完成補正及回復。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag badge-must">兩次後駁回</span>
+            <h5>兩次告知後仍未補件 → 原則駁回</h5>
+            <p>如有特殊情形，應由專案同仁敘明具體理由，提請工商科研議後辦理。</p>
+        </div>
+    </div>
+
+    <h4>一次告知公文範本（第一次）</h4>
+    <div class="template">主旨：有關貴公司申請「臺北市產業發展獎勵補助計畫」○○補助1案，因所附文件尚有缺件，請依本局申請案件一次告知單（如附件），於XXX年X月X日前補正後再行申辦，請查照。
+
+說明：
+一、復貴公司XXX年X月X日臺北市產業發展○○補助申請書。
+二、依據「臺北市產業發展獎勵補助辦法」第6條規定：「依本自治條例申請獎勵或補助案件，其應具備文件不全者，產業局應載明補正事項通知申請人限期補正；屆期未補正或補正不全者，產業局得駁回其申請」，請貴公司於指定期限內完成補正，逾期未補正者，本局將依規定辦理。</div>
+
+    <div class="alert alert-warning">
+        <strong>承辦附件需印出寄送廠商</strong>
+        一次告知單、廠商回覆函
+        <br><br>
+        <strong>參考附件（不寄出）</strong>
+        申請書、後台系統收件時間、後台補件訊息
+    </div>
+
+    <div class="alert alert-info">
+        <strong>收到廠商回覆函的處理方式</strong>
+        需將回覆函送至5樓掛號，並在空白處用鉛筆寫上「請登記桌於掛號後，協助扣時間，謝謝。」<br>
+        掛號後送至10樓分文時，余欣小姐（登記桌）才會一併扣時間。若無寫上此段文字，須自行拿掛號後的回覆函至10樓找余小姐扣時間。<br>
+        <strong>建議越接近要求補正日期再拿去掛號，這樣才能延長補正時間。</strong>
+    </div>
+
+    <h3 class="section-title" id="ch1-officialdoc">1.4 公文併案、勾稽、改審議</h3>
+
+    <h4>公文併案</h4>
+    <div class="card">
+        <p><strong>操作方式：</strong>發文時於併件文號欄位填寫</p>
+        <p><strong>Q：併哪個文號？</strong><br>
+        A：如本案有開一次告知單則併一次告知單文號，如無則併初審文號。</p>
+    </div>
+
+    <h4>公文勾稽</h4>
+    <div class="card">
+        <p><strong>適用對象：</strong>第一次開立的一次告知單，未開立一次告知單的初審文。</p>
+        <p><strong>操作步驟：</strong></p>
+        <ol class="clean">
+            <li>於公文系統左側點選「案件管理作業」</li>
+            <li>點選「新增」</li>
+            <li>填寫申請書文號後，點選「新增列管子文號」</li>
+            <li>填寫一次告知單或初審公文文號後，點選「確定」</li>
+        </ol>
+    </div>
+
+    <h4>改審議</h4>
+    <div class="card">
+        <p><strong>辦理時間點：</strong>於初審公文決行後。</p>
+        <p><strong>操作方式：</strong>將欲改審議的案件申請書掃描檔合併，並讓各申請書掃描檔僅留下第一頁（有條碼及印章那一頁），刪除其他頁面，將檔案line給余欣（分機6572）。</p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 第二篇 計畫審查 -->
+<!-- ============================================ -->
+<section id="ch2">
+    <h2 class="chapter">2. 計畫審查作業流程</h2>
+
+    <h3 class="section-title" id="ch2-flow">2.1 審查作業流程</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>初審作業</h5>
+            <ul>
+                <li><strong>創新補助：</strong>檢查申請人基本資料 → 核對計畫基本資料 → 核對檢附書表 → 摘錄計畫摘要 → 查詢是否與其他政府計畫重複申請 → 做出初審結果</li>
+                <li><strong>獎勵補貼：</strong>檢查申請人基本資料 → 核對適用獎勵類別 → 核對申請獎勵項目 → 檢查檢附書表 → 摘錄申請案簡介 → 是否符合中小企業認定 → 是否重複申請 → 做出初審結果</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>發函申請人</h5>
+            <p>製作初審函文通知已受理，請待專案辦公室通知簡報時間。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>排入分組審查</h5>
+            <ul>
+                <li>完成初審意見 → 從委員專家資料庫徵詢邀請委員</li>
+                <li>確認委員時間 → <span class="badge badge-time">會前14天</span>通知申請人會議時間地點</li>
+                <li>寄出「申請人開會通知單」及會議注意事項</li>
+                <li>線上審查系統製作分組審查會議通知 → 後台「分組審查會議管理」</li>
+                <li>主審委員彙整書審意見 <span class="badge badge-time">會前10天</span></li>
+                <li>「書審意見彙總表」寄給申請人之計畫主持人 <span class="badge badge-time">會前7天</span></li>
+                <li>一併寄出「簡報製作格式」，提醒廠商在會議前一天上傳簡報及出席人員勞保資料</li>
+                <li><span class="badge badge-time">會前1日</span>寄發會議提醒，準備「台北通簽到QRcode」及會議資料</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4</span>
+            <h5>會議當日</h5>
+            <ul>
+                <li><strong>會前：</strong>PO會前提醒/宣導 → 委員會前共識討論 → 檢查申請人身分（公司正式員工，具勞保或就業保險）→ 簽到表確認 → 收簡報檔案及補充資料 → 提醒計畫主持人報告流程及時間</li>
+                <li><strong>會中：</strong>申請人進入會場 → PO再次提醒簡報流程與時間限制 → 換場 → 當日案件審查完畢</li>
+                <li><strong>會後：</strong>委員共識討論 → 達成會議共識 → PO現場協助填寫「評核表」、「評核彙總表」 → 彙整評核表確認</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 5</span>
+            <h5>審查結果彙整</h5>
+            <p>主審委員綜整審查結論 → 做出分組審查結論 → 主審出席審議委員大會報告</p>
+        </div>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>會議重要規則</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>每一案審查會議時間 <strong>30分鐘</strong>：申請人簡報 15分鐘、委員問答 15分鐘</li>
+            <li>申請人與會人數至多 <strong>3人</strong>（含委外1人），提前30分鐘報到</li>
+            <li>出席人員需備身分證明文件、完成台北通app註冊</li>
+            <li>無法註冊台北通需另外提供紙本簽到聲明，需用印並回傳專案辦公室留底</li>
+            <li>會議開始前請申請人與審查委員確認無利益關係，如有應請主動告知，專案辦公室將另排其他委員</li>
+            <li>申請人進入會場人員身分如有例外（例如為負責人、股東但不列為計畫人員）須請示主席意見</li>
+        </ul>
+    </div>
+
+    <h3 class="section-title" id="ch2-initial">2.2 初審意見製作注意事項</h3>
+    <div class="card">
+        <h4>共通性注意事項（含獎補／研發／品牌／創業／育成）</h4>
+        <ul class="clean">
+            <li>文內提到臺北市、臺灣、臺北市政府等，均需用繁體字「<strong>臺</strong>」填寫</li>
+            <li>文內提到本公司、我們、○○公司、本計畫、○○計畫，均需用「<strong>該公司</strong>」、「<strong>該計畫</strong>」填寫</li>
+            <li>APP 改為 <strong>App</strong></li>
+            <li>獎助計畫如有修正法條／申請須知等，須同步修正初審意見內文</li>
+        </ul>
+    </div>
+
+    <h3 class="section-title" id="ch2-group">2.3 分組審查注意事項</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>分組審查目的</h4>
+            <p>邀請跨領域委員審查，著重個案整體發展潛力，不受限於申請人所填領域別。</p>
+        </div>
+        <div class="card">
+            <h4>跨領域綜合審議</h4>
+            <p>必要時可請不同領域委員專家做出書審意見供該組審查委員參考。</p>
+        </div>
+        <div class="card">
+            <h4>時間管理</h4>
+            <p>每案30分鐘：簡報15分鐘＋問答15分鐘。</p>
+        </div>
+        <div class="card">
+            <h4>主審撰寫會後結論</h4>
+            <p>由主審委員彙整書審意見，做出分組審查結論。</p>
+        </div>
+    </div>
+
+    <h4>分組審查作業文件格式</h4>
+    <ul class="clean">
+        <li><span class="badge badge-doc">文件</span> 申請人開會通知單</li>
+        <li><span class="badge badge-doc">文件</span> 書審意見彙總表（含計畫領域、計畫編號、廠商名稱、計畫名稱、審查意見）</li>
+        <li><span class="badge badge-doc">文件</span> 台北通App 會議簽到</li>
+        <li><span class="badge badge-doc">文件</span> 評核表／評核彙總表</li>
+    </ul>
+
+    <div class="alert alert-info">
+        <strong>保密提醒</strong>
+        本申請計畫之相關內容，均屬申請者營業祕密，相關作業、審核人員依法負有保密責任，敬請務必遵守，若有可能產生利益衝突，應主動提請迴避。
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 第三篇 計畫審議 -->
+<!-- ============================================ -->
+<section id="ch3">
+    <h2 class="chapter">3. 計畫審議SOP</h2>
+
+    <h3 class="section-title" id="ch3-flow">3.1 計畫審議作業流程</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>審議委員出席時間調查</h5>
+            <ul>
+                <li>先與逸祥確認主任委員、副主任委員出席時間</li>
+                <li>進行審議委員出席時間調查</li>
+                <li>確認超過半數（含）以上法定委員出席日期</li>
+                <li>確認開會時間地點 → 發出本次審議委員大會開會通知單</li>
+            </ul>
+            <div class="alert alert-warning" style="margin-top:8px;">
+                <strong>法定要件</strong> 半數（含）以上（13位）法定委員出席始得召開審議委員大會
+            </div>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>審議案件資料確認</h5>
+            <ul>
+                <li>彙整本次審議委員大會排定案件結論</li>
+                <li>呈報「審議委員大會案件資料」及「審議委員大會簡報」</li>
+                <li>確認主任委員、副主任委員導讀時間 → 專案辦公室進行案件說明</li>
+                <li>會前1日寄發開會通知提醒給與會委員</li>
+                <li>準備簽到表、錄音筆、筆電、所有審查意見/簡報、大會資料及簡報印製完成</li>
+            </ul>
+            <p style="margin-top:8px;"><strong>呈報主任委員資料應檢附：</strong>本次大會委員出席名單、所有案件初審表、案件資料、大會簡報</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>進行審議大會</h5>
+            <ul>
+                <li>專案辦公室報告計畫執行情形、異常個案討論</li>
+                <li>審議委員逐案討論 → 主席裁定個案審議結果</li>
+                <li>審議委員大會作成決議 → 個案依大會決議辦理</li>
+            </ul>
+            <p style="margin-top:8px;"><em>若討論案件主審委員無法出席報告，經詢工商科同意後，可由有參與該場次其他委員或專家代為報告。</em></p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4</span>
+            <h5>會後核定資料準備</h5>
+            <ul>
+                <li>依決議做出「審議委員大會會議紀錄」、「審議委員大會核定內容資料」</li>
+                <li>簽出會議記錄（檢附：會議紀錄、核定內容、簽到表）</li>
+                <li>準備「核定函」、「核定結果通知」、「分組結論彙整資料」</li>
+                <li>正式發出核定函</li>
+                <li>專案辦公室Email通知核定通過申請人 → 告知準備請領第一期款說明及請款附件格式</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="section-title" id="ch3-rules">3.2 審議大會辦理原則</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>大會原則</h4>
+            <p>遵循過往會議共識與運作慣例</p>
+        </div>
+        <div class="card">
+            <h4>大會共識</h4>
+            <p>就委員意見達成統一決議</p>
+        </div>
+        <div class="card">
+            <h4>大會辦理原則</h4>
+            <p>依規定程序辦理，留存錄音及會議紀錄</p>
+        </div>
+    </div>
+
+    <h3 class="section-title" id="ch3-result">3.3 核定結果通知</h3>
+    <div class="alert alert-info">
+        <strong>核定通知函關鍵內容（過案）</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>依大會決議辦理，核准補助項目、補助比例、補助總額</li>
+            <li>建議計畫總經費、自籌款、計畫期間，並依審查意見修正計畫書</li>
+            <li>社會回饋須於計畫期間內完成，占計畫經費比例 <strong>不超過5%</strong> 為原則</li>
+            <li>受核准後 <strong>30日內</strong> 檢具相關文件向本局請領50%補助款</li>
+            <li>須設立金融機構乙存專戶並獨立設帳管理，帳戶名稱訂為「（公司名稱）（○○計畫名稱）計畫補助款專戶」</li>
+            <li>計畫期間及結束後3年內應配合：成果效益追蹤、參與成果發表會、文宣加註本府形象廣宣標誌、擔任業師</li>
+        </ul>
+    </div>
+
+    <h4>過案核定函公文範本（主旨）</h4>
+    <div class="template">主旨：貴公司以「○○○○○○」（計畫名稱）申請○○○年度臺北市產業發展○○補助一案，業經審議完竣，茲檢送「臺北市產業發展○○○補助結果通知」如附件，請查照。
+
+說明：
+一、依據○○○年○月○○日「臺北市產業發展獎勵及補助審議委員會」第○○○次會議決議辦理。
+二、請依「臺北市產業發展獎勵補助辦法」第9條規定，於○○○年○月○○日（含）前（基本為一個月），備妥第一期款請款相關文件向本局辦理請領補助款。
+三、計畫執行期間，受補助者得於符合原訂計畫目標及不增加補助款之原則下，變更計畫執行內容；應依「計畫變更表」敘明變更內容及理由，於計畫執行期間屆滿日一個月之前以書面申請變更，經本局審核同意後始得變更。
+四、本局與合作金庫商業銀行合作辦理「臺北市產業發展獎勵補助企業優惠融資貸款專案實施計畫」。
+五、本府建置「TOPS台北好購推廣平台」，歡迎登錄成為平台會員。
+六、對審議結果如有疑義，請洽1999轉6625、1428；對通知函如有不服，得自送達次日起30日內提起訴願。</div>
+
+    <h4>未過案核定函公文範本</h4>
+    <div class="template">主旨：有關貴公司依臺北市產業發展自治條例規定，以「○○○○○○」申請○○補助一案，復如說明，請查照。
+
+說明：
+一、依據○○○年○月○○日「臺北市產業發展獎勵及補助審議委員會」第○○○次會議決議辦理。
+二、旨揭計畫經提上揭委員會審議結果，鑑於○○○○○○（未通過原因，見大會資料奉核檔），決議不予補助。
+三、對審議結果如有疑義，請洽1999轉6625、1428；對通知函如有不服，得自送達次日起30日內提起訴願。</div>
+</section>
+
+<!-- ============================================ -->
+<!-- 第四篇 計畫管考 -->
+<!-- ============================================ -->
+<section id="ch4">
+    <h2 class="chapter">4. 計畫管考SOP</h2>
+
+    <h3 class="section-title" id="ch4-subsidy">4.1 獎勵補貼請款作業</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1 <span class="badge badge-time">30天內</span></span>
+            <h5>裝訂修正後計畫書件</h5>
+            <p>獲獎勵補貼廠商於收到核定函後 <strong>30天內</strong> 遞交修正後計畫書，順序為：</p>
+            <ol class="clean">
+                <li>獎勵補貼申請書</li>
+                <li>計畫審查意見及回覆說明表</li>
+                <li>修正後計畫內容</li>
+                <li>規定之附件</li>
+            </ol>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2 <span class="badge badge-time">當年度9-10月</span></span>
+            <h5>受理獎勵補貼請款</h5>
+            <ul>
+                <li>寄發請款提醒通知，告知請款時間、辦理請款注意事項及辦理請款梯次</li>
+                <li><strong>當年度10月31日前</strong>檢送請款應備文件</li>
+                <li>專案辦公室檢核請款文件是否齊全</li>
+                <li>文件齊全：檢送產業發展局辦理請款作業</li>
+                <li>文件缺件：發出一次告知單給予期限補正</li>
+                <li>未請款廠商務必以Mail、電話及實地查訪進行稽催，<strong>留存稽催紀錄備查</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <h4>獎勵補貼請款應備文件</h4>
+    <table>
+        <thead><tr><th>應備項目</th><th>說明</th></tr></thead>
+        <tbody>
+            <tr><td>撥款請領申請書</td><td>含基本資料、應備書表、應附憑證</td></tr>
+            <tr><td>請款領據</td><td>金額為國字大寫，加蓋公司登記大小章</td></tr>
+            <tr><td>各補貼項目請款明細表</td><td>分項列出本次申請補貼金額</td></tr>
+            <tr><td>申請獎勵項目相關憑證</td><td>依下表各補貼項目應附憑證</td></tr>
+            <tr><td>公司存摺封面影本</td><td>確認金融機構、帳戶名稱、帳號</td></tr>
+            <tr><td>修正後計畫書</td><td>計畫書封面送件日期為遞交申請書日期</td></tr>
+        </tbody>
+    </table>
+
+    <h4>各補貼項目應附憑證</h4>
+    <table>
+        <thead><tr><th>獎勵項目</th><th>應附憑證</th></tr></thead>
+        <tbody>
+            <tr><td>（一）勞工職業訓練費用補貼</td><td>1. 員工受雇合約或勞保名冊影本<br>2. 訓練人員名冊<br>3. 勞工職業訓練支出憑證<br>4. 本市就業服務處推薦函（非申請僱用中高齡失業勞工優惠補貼者免附）</td></tr>
+            <tr><td>（二）勞工薪資補貼</td><td>1. 員工受雇合約或勞保名冊影本<br>2. 薪資清冊<br>3. 員工身分證正反面影本<br>4. 員工薪資支出憑證</td></tr>
+            <tr><td>（三）房屋稅補貼</td><td>1. 建物登記謄本<br>2. 已繳納房屋稅之納稅證明或繳款書</td></tr>
+            <tr><td>（四）地價稅補貼</td><td>1. 土地登記謄本<br>2. 已繳納地價稅之納稅證明或繳款書</td></tr>
+            <tr><td>（五）房地租金補貼</td><td>1. 經公證之房地租賃契約書影本<br>2. 租金繳納證明</td></tr>
+            <tr><td>（六）融資利息補貼</td><td>1. 融資契約影本<br>2. 銀行繳息憑證</td></tr>
+        </tbody>
+    </table>
+
+    <div class="alert alert-warning">
+        <strong>切結事項</strong>
+        申請房屋稅、地價稅及房地租金之補貼，申請人切結該房地無出租或轉讓予他人使用之情事。
+        <br>申請人申請內容如有不實者，願依「臺北市產業發展自治條例」第二十條規定辦理。
+    </div>
+
+    <h3 class="section-title" id="ch4-innovation">4.2 創新補助請領第一期款</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1 <span class="badge badge-time">30天內</span></span>
+            <h5>獲補助廠商提交修正後計畫書件</h5>
+            <p>核定通過 → 寄發請款通知信件（含裝訂注意事項） → 廠商於收到核定函後 <strong>30天內</strong> 遞交</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>確認修正後計畫書內容</h5>
+            <ul>
+                <li>專案辦公室檢查修正後計畫書內容</li>
+                <li>計畫書提交主審委員 → 取得主審確認同意信件 → 同意後進行裝訂</li>
+                <li><span class="badge badge-must">必做</span>依據核定函檢查計畫書修正內容</li>
+                <li>特別注意：計畫名稱、公司名稱、計畫執行日期、核定補助款、委外合約、歲出預算分配表等是否正確</li>
+                <li>提醒委員再次確認修正後計畫書查核點</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>修正後計畫書裝訂</h5>
+            <p>裝訂內容與順序：</p>
+            <ol class="clean">
+                <li>創新補助申請書</li>
+                <li>計畫審查意見及回覆說明表</li>
+                <li>修正後計畫內容</li>
+                <li>規定之附件</li>
+            </ol>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4</span>
+            <h5>確認請款文件正確</h5>
+            <p><strong>請款領據</strong></p>
+            <ul>
+                <li>領據金額應為核定補助款之 <strong>50%</strong></li>
+                <li>領據金額應為 <strong>國字大寫</strong></li>
+                <li>公司登記地址是否與公司登記資料相同</li>
+                <li>計畫名稱與核定計畫名稱一致</li>
+                <li>確實加蓋公司登記大小章</li>
+                <li>指定帳戶與廠商提供之存摺封面影本一致</li>
+            </ul>
+            <p style="margin-top:8px;"><strong>總經費預算表</strong>：計畫書內的經費預算表（含後方明細）印出後加蓋公司登記大小章</p>
+            <p><strong>銀行履約保證金（創業及創新育成補助免附）</strong></p>
+            <ul>
+                <li>履約保證金金額為第一期款 <strong>30%</strong></li>
+                <li>保證到期日至少為計畫結束後 <strong>3個月</strong>止（或本金自動轉期）</li>
+                <li>使用一般定期存單者，存單戶頭需為 <strong>公司戶頭</strong></li>
+                <li>銀行回覆函須加註：「本行同意於質權消滅前不對質物標的物之存款債權行使抵銷權」</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4>第一期款請款應備文件（依補助類別）</h4>
+    <table>
+        <thead><tr><th>項目</th><th>研發補助</th><th>品牌補助</th><th>創新育成</th><th>創業補助</th></tr></thead>
+        <tbody>
+            <tr><td>1. 請領申請書正本</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>2. 與請款金額一致之領據正本</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>3. 經費需求總表影本（含後方各科目細項）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>4. 受補助單位存摺封面影本</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+            <tr><td>5. 銀行履約保證金保證書或一般定期存單及回覆函</td><td>✓</td><td>✓</td><td>×</td><td>×</td></tr>
+            <tr><td>6. 膠裝版修正後計畫書一式三份（退一份留底）</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        </tbody>
+    </table>
+
+    <h4>第一期款辦理流程</h4>
+    <div class="flow">
+        <div class="flow-step"><span class="num">1</span><h5>發送請款通知信</h5><p>給過案廠商</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">2</span><h5>檢視修正後計畫書</h5><p>確認已照核定結果通知修正</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">3</span><h5>送主審委員確認</h5><p>計畫書及修正意見表寄主審</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">4</span><h5>委員同意請款</h5><p>請廠商完成其餘應備文件</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">5</span><h5>確認文件並送件</h5><p>進行公文辦理</p></div>
+    </div>
+
+    <h4>請款通知信時間點</h4>
+    <ul class="clean">
+        <li><span class="badge badge-time">第一期款</span> 核定函發出後 <strong>15日內</strong></li>
+        <li><span class="badge badge-time">第二期款</span> 結案審查後且委員同意無須補件</li>
+    </ul>
+    <p>信件附件：請款文件壓縮包、管考手冊、會計科目編列原則</p>
+
+    <h4>第一期款請款信件範本（廠商指引重點）</h4>
+    <div class="template">您好：
+恭喜獲得臺北市政府○○補助，
+請於收到紙本核定通知函之後準備第1期請款作業，計畫編號: ○○○○○○
+
+準備順序如下：
+1. 依據紙本核定函之「結果通知」之「應辦事項及修正KPI項目」及「補助金額、計畫總經費金額、補助比例」修正計畫書並將電子檔寄給承辦人，修正內容須黑色+粗體+底線標示。
+2. 核定函的「應辦事項及修正KPI項目」還需填入「計畫審查意見及回覆說明表」並標明頁碼。
+3. 待計畫書電子檔完成修正，辦公室將E-mail委員檢閱。
+4. 委員檢閱OK會回覆辦公室，承辦人將E-mail廠商辦理請款。
+5. 依據「撥款請領申請書」準備文件。
+6. 依據「計畫書裝訂說明」裝訂計畫書。
+7. 先掃描1份給承辦人檢查無誤後再行裝訂後送市政府。
+
+其它注意事項：
+- 繳交修正後計畫書電子檔期限：收到核定函後15日內
+- 請款交件完成：收到核定函後30日內
+- 計畫書封面名稱後請加上「（修正後）」字樣
+- 計畫書封面送件日期為遞交「撥款請領申請書」的日期
+- 「撥款請領申請書」的日期為正式送件市府日期或空白
+
+履約保證金辦理注意事項（創業補助、創新育成與獎勵補貼無此項）
+- 「銀行履約保證金保證書」或「一般定期存單」擇一辦理
+- 若選擇定存：以「公司」名義辦理；金額為「第1期款*30%」
+- 起迄時間：起-至銀行辦理日；迄-計畫結束後3個月
+- 利息需設為到期一次領息，不得按月領息
+- 覆函中請銀行加註抵銷權條款</div>
+
+    <h3 class="section-title" id="ch4-visit">4.3 計畫實地查訪</h3>
+
+    <h4>查訪流程總覽</h4>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>安排實地查訪事項</h5>
+            <ul>
+                <li>建立當月查訪排程</li>
+                <li>專案辦公室協調委員、廠商雙方可配合日期、時間、地點</li>
+                <li>通知市府人員出席</li>
+                <li><span class="badge badge-must">必做</span>創新補助及獎勵補貼案件每案均需於計畫執行期間進行 <strong>一次實地查訪</strong></li>
+                <li>查訪地點：廠商工商登記地、實際營業場所或實驗場域；如有房地租金補貼，應前往該地點</li>
+                <li>告知廠商準備查訪文件：依修正後計畫書工作進度、會計經費使用情形、原始憑證</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2 <span class="badge badge-time">前一日</span></span>
+            <h5>實地查訪前一日</h5>
+            <ul>
+                <li>規劃查訪行程及交通工具</li>
+                <li>與廠商、市府人員（及委員）確認行程</li>
+                <li>備妥相關查訪書表：查訪紀錄表暨簽到表、原始憑證查核紀錄表</li>
+                <li>如有委員出席，準備出席費領據</li>
+            </ul>
+            <div class="alert alert-info" style="margin-top:8px;">
+                <strong>委員出席費計算</strong>
+                單一家查訪費用：2,500元（出席暨審查費）；單次查訪一案以上，每案 +1,000元 審查費。
+            </div>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>實地查訪當日</h5>
+            <p><strong>專案辦公室：</strong></p>
+            <ul>
+                <li>獲補助廠商進行工作進度報告</li>
+                <li>檢視工作進度、經費動支情形、會計帳務原始憑證</li>
+                <li>告知後續管考（變更、結案、效益評估等）應注意事項</li>
+                <li>撰寫實地查訪會議紀錄</li>
+                <li>廠商簽名確認紀錄內容</li>
+                <li>會議中拍攝照片留存</li>
+            </ul>
+            <p style="margin-top:8px;"><strong>審查委員：</strong></p>
+            <ul>
+                <li>檢視工作進度</li>
+                <li>對廠商執行進度及方向適度給予引導及調整</li>
+                <li>如遇廠商有計畫變更事項，會中溝通後即做成會議紀錄，簽署同意或不同意此項變更</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4 無異常</span>
+            <h5>查訪後資料彙整</h5>
+            <ul>
+                <li>告知廠商：如查訪時告知有變更事項，會後再次通知務必於結案前完成變更紙本文件函送產業發展局</li>
+                <li>告知產業發展局：會議紀錄彙整、暫付款轉正資料彙整、發文進行暫付款轉正</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 5 異常處理</span>
+            <h5>異常個案處理</h5>
+            <ul>
+                <li><strong>第一次查訪（無委員出席）進度落後者：</strong>進行第二次實地查訪，邀請委員出席了解情形</li>
+                <li><strong>委員查訪後進度落後無法改善者：</strong>廠商提出補件期限（不得逾30日），市府發出函文告知期限內提交進度補正資料</li>
+                <li>如經限期改善未改善：提報產業發展局，依行政法令發函處分</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4>查訪相關文件清單</h4>
+    <ol class="clean">
+        <li>查訪名單總表（安排要查訪廠商用）</li>
+        <li>查訪紀錄表（記得請廠商簽名）</li>
+        <li>每月實地查訪報告格式</li>
+        <li>實地查訪簽到表</li>
+        <li>查訪紀錄彙整表</li>
+    </ol>
+
+    <h4>查訪細部說明</h4>
+    <div class="card">
+        <h4>更新過案名單</h4>
+        <ul class="clean">
+            <li>每季向胡家寧（排審人員）要最新過案名單，將新過案資料加入查訪名單總表</li>
+            <li>注意每案的核定日期與結案日期</li>
+            <li>結案日期早的要先查訪；市府要求計畫開始後6個月要安排查訪</li>
+            <li>查訪名單總表已設好公式，可自動算出建議查訪日期（6個月後）跟預警日期（結案前2個月）</li>
+            <li>盡量提早 <strong>2~3個月</strong> 完成查訪</li>
+            <li><span class="badge badge-key">重點</span>創業補助常有核定之後馬上就要結案的（創業可回溯90天），<strong>要優先安排查訪</strong></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>委員出席</h4>
+        <ul class="clean">
+            <li>目前要求每個案件都要問主審委員要不要出席</li>
+            <li>有的主審委員都會一起去看，有的不去不回信，有問就好，不強制出席</li>
+            <li>會議前3天將廠商期中報告提供給委員</li>
+            <li>會中準備一份廠商查核點清單（簽約版）給委員參考</li>
+            <li>請廠商準備一份紙本報告給委員（蠻多委員要看紙本的）</li>
+            <li><strong>會計報告有薪資資料，不要提供給委員</strong></li>
+            <li>領據請給委員親簽</li>
+            <li><span class="badge badge-key">提醒</span>部分委員現場沒有核可計畫變更的權限，需走正式變更流程，經委員與市府同意才算生效</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>時間安排</h4>
+        <ul class="clean">
+            <li>每月20號左右寄信通知廠商下個月要進行查訪，請廠商提供可安排時間</li>
+            <li>會前3天提供期中報告與期中會計報告（期中會計報告不用做會計簽證）</li>
+            <li>每案查訪時間1小時：沒問題的半小時內結束，大多約1小時完成</li>
+            <li>創業補助通常會花較長時間</li>
+            <li>委員出席的案子建議可排上下午各1場查訪，較不會緊迫</li>
+            <li><span class="badge badge-key">重點</span>期中查訪 <strong>不是</strong> 期中審查，沒有通不通過的問題，只是做進度確認</li>
+            <li>期中報告也不會審查，有做就好，最終以期末報告/期末會計報告為準</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>查訪會議流程</h4>
+        <ul class="clean">
+            <li>根據案件資料製作查訪紀錄表</li>
+            <li>下載廠商簽約版計畫書，用來核對廠商執行進度</li>
+            <li>由廠商自行決定期中報告+會計報告的資料截止日期，原則上希望查核點更新到查訪當月的前一個月</li>
+            <li>確認計畫中「每一個」查核點執行進度（廠商常只會報告到期中進度，要追問每個查核點）</li>
+            <li>若有異常情形（進度嚴重落後、明顯無法完成），要記錄並建議廠商最晚必須於計畫結束前一個月申請計畫變更</li>
+            <li>太嚴重的要請辦公室正式發文請廠商限期補正</li>
+            <li>經費變更、查核點變更一律請廠商正式以公文提出申請才算受理</li>
+            <li>查訪紀錄表記得請廠商 <strong>簽名</strong></li>
+            <li>現場要 <strong>拍照</strong>，以照到廠商、委員為主</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h4>紀錄彙整</h4>
+        <ul class="clean">
+            <li>月底彙整每月查訪報告</li>
+            <li>廠商有完成的查核點才寫進報告</li>
+            <li>需變更或查核點須補正的事項要寫進報告</li>
+            <li>統整一份查訪紀錄，讓結案窗口比較好彙整每一案的查訪時間</li>
+            <li><span class="badge badge-time">每月5號之前</span> 繳交上月查訪報告</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>變更／結案窗口分工</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>創業／品牌：陳柏翰</li>
+            <li>研發／育成：楊琇文</li>
+            <li>獎勵補貼：胡家寧</li>
+        </ul>
+    </div>
+
+    <h4>管考注意事項提醒</h4>
+    <div class="alert alert-danger">
+        <strong>請廠商務必注意</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>計畫執行期間若有任何變更事項，請於計畫執行結束 <strong>前一個月</strong>，以紙本函文向產業發展局申請。<strong>僅以口頭、電子郵件、紙本附件告知無具效力。</strong></li>
+            <li>經費核銷應符合會計科目編列原則及查核準則；費用支出需取得合法之原始支用單據</li>
+            <li>原始記帳憑證依計畫分類整理並於期末彙訂成冊妥善保管</li>
+            <li>未確實辦理者，本局得廢止原核准補助處分之全部或一部</li>
+            <li>原始支用單據應依會計法、商業會計法及審計法規定妥善保存與銷毀</li>
+            <li>受補助者結案時須提出 <strong>會計師簽證之會計報告</strong></li>
+            <li>獎補助款應申報營業外收入，避免遭補稅及處罰</li>
+        </ul>
+    </div>
+
+    <h3 class="section-title" id="ch4-change">4.4 計畫變更</h3>
+
+    <h4>計畫變更作業流程</h4>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>受理變更案件</h5>
+            <p>廠商提出變更需求 → 檢具變更表電子檔至專案辦公室 → 專案辦公室確認變更內容 → 與廠商取得變更內容共識</p>
+            <p style="margin-top:8px;"><em>計畫廠商得於符合原定計畫目標、不增加補助款、不違背會計科目編列及查核準則之原則下變更計畫執行內容。</em></p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>變更再確認</h5>
+            <p>專案辦公室確認後內容 → 重大變更送主審委員再確認 → 取得主審委員同意</p>
+            <div class="alert alert-warning" style="margin-top:8px;">
+                <strong>重大變更需委員同意項目</strong>
+                預算流用、委外費用變更、查核指標調整、更換計畫主持人等
+            </div>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>通知廠商送出紙本</h5>
+            <p>通知廠商發出紙本函文 → 確認受理 → 市府回函確認同意變更結果</p>
+            <p style="margin-top:8px;"><span class="badge badge-must">必做</span><strong>請於計畫執行結束前一個月以紙本函文申請</strong>。僅口頭、電子郵件、紙本附件告知無效力。</p>
+        </div>
+    </div>
+
+    <h4>「臺北市產業發展獎勵補助計畫」變更項目一覽表</h4>
+    <table>
+        <thead><tr><th>變更項目</th><th>需委員同意？</th><th>應檢附文件</th></tr></thead>
+        <tbody>
+            <tr><td>總經費預算變更（經費間流用）</td><td><span class="badge badge-must">是</span></td><td>總經費預算變更表；有流用的科目皆須經委員同意</td></tr>
+            <tr><td>公司地址、負責人等</td><td>否</td><td>公司變更登記文件</td></tr>
+            <tr><td>人事費（計畫主持人）</td><td><span class="badge badge-must">是</span></td><td>計畫主持人變更表</td></tr>
+            <tr><td>人事費（計畫人員）</td><td>否</td><td>研發人員替換變更表、相關勞保或就業保險證明</td></tr>
+            <tr><td>人事費（顧問）</td><td><span class="badge badge-must">是</span></td><td>研發人員替換變更表、顧問合約、原任職單位同意書</td></tr>
+            <tr><td>消耗性器材及原材料費</td><td>否</td><td>消耗性器材及原材料費變更表</td></tr>
+            <tr><td>研發設備使用費</td><td>否</td><td>研發設備使用費變更表</td></tr>
+            <tr><td>委外費用（委託勞務）</td><td><span class="badge badge-must">是</span></td><td>委外費用變更表、委外合約相關資料</td></tr>
+            <tr><td>專利申請費</td><td><span class="badge badge-must">是</span></td><td>專利申請費用變更表</td></tr>
+            <tr><td>場地租金及布置費</td><td>否</td><td>場地租金及布置費變更表</td></tr>
+            <tr><td>文宣品製作費</td><td>否</td><td>文宣品製作費變更表</td></tr>
+            <tr><td>參展費用</td><td><span class="badge badge-must">是</span></td><td>參展費用變更表</td></tr>
+            <tr><td>專家學者審查及出席費、諮詢費</td><td><span class="badge badge-must">是</span></td><td>專家學者審查及出席費、諮詢費變更表</td></tr>
+            <tr><td>講師費</td><td><span class="badge badge-must">是</span></td><td>講師費變更表</td></tr>
+            <tr><td>房地租金</td><td>否</td><td>房地租金變更表；地點不可變更</td></tr>
+            <tr><td>水電費</td><td>否</td><td>水電費變更表；使用地點不可變更</td></tr>
+            <tr><td>員工教育訓練費用</td><td><span class="badge badge-must">是</span></td><td>員工教育訓練費用變更表；課程內容調整須經委員同意</td></tr>
+            <tr><td>差旅費用</td><td><span class="badge badge-must">是</span></td><td>差旅費用變更表</td></tr>
+            <tr><td>市場拓展業務費</td><td>否</td><td>市場拓展業務費用變更表</td></tr>
+        </tbody>
+    </table>
+
+    <h4>計畫變更辦理流程</h4>
+    <div class="flow">
+        <div class="flow-step"><span class="num">1</span><h5>發送變更流程信件</h5></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">2</span><h5>確認文件無誤</h5><p>確認變更項目是否須委員核可</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">3</span><h5>需委員核可者</h5><p>Mail請委員檢視是否同意變更</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">4</span><h5>廠商送紙本</h5><p>每頁皆需蓋登記大小章</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">5</span><h5>進行公文辦理</h5></div>
+    </div>
+
+    <h4>廠商變更函文範本（主旨）</h4>
+    <div class="template">主旨：檢送本公司執行臺北市產業發展獎勵補助計畫項下「○○○○計畫」（計畫編號：○○○○○○○）計畫變更申請相關資料，請查照見復。
+
+說明：
+一、本公司申請研發人員及代聘人員替換變更。
+二、隨函檢附下列文件各1份：
+（一）研發人員替換、待聘人員聘任表。
+（二）計畫書內容修正頁○○頁、○○頁、○○頁。
+（三）替換人員、代聘人員加保證明。
+
+正本：臺北市政府產業發展局</div>
+
+    <h3 class="section-title" id="ch4-close">4.5 計畫結案及請領第二期款</h3>
+
+    <h4>結案及第二期款作業流程</h4>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">前三週</span>
+            <h5>結案前通知</h5>
+            <ul>
+                <li>專案辦公室E-mail通知計畫執行期間即將屆滿</li>
+                <li>請廠商保留時間與會</li>
+                <li>廠商於規定時間將結案報告及簡報E-mail給專案辦公室</li>
+                <li>結案報告應包含：成果資料、查核點佐證資料、計畫彙編、計畫變更表及往來公文函、期中/結案會計報告</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">前兩週</span>
+            <h5>結案前通知（二週前）</h5>
+            <ul>
+                <li>結案審查會開會時間調查完畢</li>
+                <li>將開會通知單寄至廠商</li>
+                <li>請廠商準備結案報告書面資料</li>
+                <li>將廠商結案報告電子檔Email給結案審查委員</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">結案當日</span>
+            <h5>結案審查會議</h5>
+            <ul>
+                <li><strong>會前：</strong>PO會前提醒/宣導 → 委員會前共識討論 → 檢查廠商身分（公司正式員工，具勞保或就業保險）→ 簽到表確認 → 收結案報告書面資料及簡報 → 提醒計畫主持人報告流程</li>
+                <li><strong>會中：</strong>結案廠商進入會場 → PO再次提醒簡報流程與時間限制 → 換場 → 當日案件審查完畢</li>
+                <li><strong>現況結案：</strong>審查委員與結案廠商確認達成比例 → 雙方取得共識 → 確認扣款項目、比例及金額</li>
+                <li><strong>會後：</strong>委員共識討論 → 達成會議共識 → PO現場協助填寫結案審查表 → 確認</li>
+            </ul>
+            <div class="alert alert-info" style="margin-top:8px;">
+                現況結案須經審查委員與結案廠商取得共識，並現場告知廠商現況結案扣款將會在由市府發出正式函文通知。
+            </div>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">結案後</span>
+            <h5>結案審查會後處理</h5>
+            <ul>
+                <li><strong>現場完成結案：</strong>會後3日內專案辦公室通知請款</li>
+                <li><strong>需補正資料後結案：</strong>專案辦公室3日內通知補件內容；補正最長30日；補正資料經主審核定後始得結案請款</li>
+                <li><strong>現況結案（扣款）：</strong>須經審議委員大會核定後 → 會後依產業局正式函文通知扣款比例及金額 → 收到函文後始得請領尾款</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">尾款請領</span>
+            <h5>請領尾款（創新補助）</h5>
+            <ul>
+                <li>結案廠商收到結案請款通知（含提醒事項）</li>
+                <li>繳交修正後總結報告書及請款應備文件</li>
+                <li>市府函知廠商尾款已撥付</li>
+                <li>出納通知可領回質押履約保證金存單</li>
+                <li>辦理結清帳戶</li>
+            </ul>
+        </div>
+    </div>
+
+    <h4>結案請款應備文件</h4>
+    <ol class="clean">
+        <li>請領申請書</li>
+        <li>與請款金額一致之領據</li>
+        <li>補助款專戶存摺封面影本1份（創新育成暨天使補助繳交公司戶頭存摺影本）</li>
+        <li>會計師簽證之查核報告 <strong>正本</strong> 1份</li>
+        <li>膠裝版修正後總結報告書一式 <strong>4份</strong>
+            <ul style="margin-left:20px;">
+                <li>成果資料</li>
+                <li>查核點佐證資料</li>
+                <li>計畫彙編</li>
+                <li>計畫變更表及往來公文函</li>
+                <li>效益評估調查表</li>
+                <li>期中/結案會計報告</li>
+                <li>會計師簽證影本</li>
+            </ul>
+        </li>
+        <li>退還履約保證金領據（創業補助免付）</li>
+    </ol>
+
+    <h4>結案審查表填寫要點</h4>
+    <table>
+        <thead><tr><th>審查項目</th><th>委員評核重點</th></tr></thead>
+        <tbody>
+            <tr><td>一、執行成果是否已達「查核點」預定進度？</td><td>是／否 + 說明</td></tr>
+            <tr><td>二、結案總報告是否詳實具體？是否檢附足夠相關報告、資料、圖表、測試數據？</td><td>是／否 + 說明</td></tr>
+            <tr><td>三、後續成果落實可行性建議？</td><td>建議內容</td></tr>
+            <tr><td>四、本案執行成效優良，可推薦為亮點企業？</td><td>是／否 + 推薦原因</td></tr>
+            <tr><td>總評</td><td>□符合進度，同意結案／□須修正或補充資料／□執行情形與計畫目標落差，扣款結案／□其他</td></tr>
+        </tbody>
+    </table>
+
+    <h4>第二期款請款信件重點</h4>
+    <div class="alert alert-info">
+        <strong>「修正後總結報告」裝訂注意事項</strong>
+        <ol style="margin-left:20px;margin-top:8px;">
+            <li>依照「裝訂說明」修訂「修正後總結報告書」（封面、目錄、內文都更換為「修正後總結報告」）</li>
+            <li>「修正後總結報告書」一定要有成果彙編等附件</li>
+            <li>務必將會後補件資料加入修正後總結報告書</li>
+            <li>各項查核點的佐證資料皆需裝訂，市府會盤點</li>
+            <li>送交紙本同時提供電子檔留存</li>
+            <li>用印皆是公司登記大小章</li>
+        </ol>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>「請領尾款申請文件」注意事項</strong>
+        <ol style="margin-left:20px;margin-top:8px;">
+            <li>依「撥款請領申請書（第二期款）」準備請款文件</li>
+            <li>會計師簽證查核報告繳交 <strong>正本</strong>（包含期中及期末會計報告）1份，每頁加蓋會計師騎縫章（兩頁蓋一個），雙面列印</li>
+            <li>各項科目、金額、比例、小計及合計需正確（若期中有變更預算，以變更後預算為主）</li>
+            <li>期中及期末會計科目、明細、金額需與會計師簽證報告一致</li>
+            <li>請領申請書、尾款領據的日期請先空白</li>
+            <li>各項憑證應由公司保留成冊（依審計法規定保留 <strong>10年</strong>），審計部會不定期抽查</li>
+            <li>用印請使用公司登記大小章</li>
+            <li>撥款審核程序最長 <strong>45天</strong>，撥款公文送達後再算5~7個工作天款項入帳</li>
+        </ol>
+    </div>
+
+    <h4>第二期款辦理流程</h4>
+    <div class="flow">
+        <div class="flow-step"><span class="num">1</span><h5>結案審查會後</h5><p>請主審委員提供結案審查表，確認是否尚需補件</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">2</span><h5>補件完成後</h5><p>發送請款通知信給結案廠商</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">3</span><h5>廠商回覆文件</h5><p>確認文件無誤可送件</p></div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step"><span class="num">4</span><h5>進行公文辦理</h5></div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 第五篇 其他作業 -->
+<!-- ============================================ -->
+<section id="ch5">
+    <h2 class="chapter">5. 計畫諮詢服務輔導</h2>
+
+    <h3 class="section-title">諮詢輔導工作項目</h3>
+    <div class="card">
+        <h4>計畫書諮詢</h4>
+        <ul class="clean">
+            <li>從諮詢申請官網後台之廠商預約申請案件量及分配案件</li>
+            <li>提供廠商計畫書撰寫指導，提供修改方向或建議</li>
+            <li>提供申請計畫須知/應注意事項說明</li>
+            <li><strong>時間配置：</strong>每周一、四下午各3場次，共計6廠商；每場次40分鐘</li>
+        </ul>
+    </div>
+
+    <h3 class="section-title">諮詢申請受理流程</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>廠商透過官網預約</h5>
+            <p>諮詢案主要透過獎補計畫官網（<a href="https://www.industry-incentive.taipei/">https://www.industry-incentive.taipei/</a>）首頁下方「諮詢申請」進行預約時間。</p>
+            <p>申請選項：「我已進行計畫書撰寫，想請專人提供修正建議」／「我想了解撰寫計畫細節，例如會計科目編列、撰寫方向」／「否，我想了解市府有哪些資源、符合哪些申請資格」</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>後台匯出申請案件</h5>
+            <p>每周從官網後台（<a href="https://industry-incentive.taipei/WebAdmin/login.php">https://industry-incentive.taipei/WebAdmin/login.php</a>）將新諮詢申請案件點選匯出資料，並複製轉貼至自建GOOGLE諮詢表單。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>與廠商約時間</h5>
+            <p>每次諮詢40分鐘，廠商要問問題或針對計畫書內容都可以。<strong>諮詢內容不等於官方正確做法，只是就過往經驗提出的「建議」。</strong></p>
+            <p><span class="badge badge-key">提醒</span>廠商一旦送件（正式受理申請案）後就 <strong>不提供諮詢</strong>，避免行政上爭議。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4</span>
+            <h5>填寫諮詢紀錄</h5>
+            <p>每案結束後立即填寫GOOGLE表單，同時在官網後台一併填寫在備註欄位，將未處理狀態轉為處理狀態。</p>
+            <p><strong>後台操作：</strong>後台管理 → 官網管理 → 申請服務管理 → 諮詢申請 → 諮詢申請列表 → 「查看」 → 處理狀態改「已處理」並填寫備註欄位 → 送出表單</p>
+        </div>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>重要提醒</strong>
+        為讓更多業者有諮詢機會，每家公司原則每個申請案諮詢以 <strong>三次為限</strong>。但送件後下次再來諮詢可以算新案。
+    </div>
+
+    <h3 class="section-title">廠商諮詢服務紀錄表（範例欄位）</h3>
+    <table>
+        <thead>
+            <tr><th>NO</th><th>臺北市投資人</th><th>產業別</th><th>諮詢服務內容摘要</th><th>追蹤進度</th><th>申請內容</th><th>本案狀態</th><th>廠商來源</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>XX公司</td>
+                <td>XX</td>
+                <td>方式：電話說明、E-MAIL、面對面說明<br>1. 說明計畫申請資格、獎勵補貼項目、申請程序<br>2. 經瞭解後適合申請獎勵補貼計畫，後續安排計畫書1對1指導</td>
+                <td>投資人適合申請獎勵投資計畫，進入計畫書撰寫1對1個案指導中</td>
+                <td>獎勵項目申請內容：勞工薪資補貼</td>
+                <td>協助申請完成計劃書指導與掛號</td>
+                <td>一對一</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="ch6">
+    <h2 class="chapter">6. 計畫廣宣</h2>
+
+    <h3 class="section-title">活動辦理查核表</h3>
+    <table>
+        <thead><tr><th>編號</th><th>項目</th><th>內容</th></tr></thead>
+        <tbody>
+            <tr><td>1</td><td>活動內容確認</td><td>活動日期時間、活動地點、活動主持人、記錄人員、議程及時間分配</td></tr>
+            <tr><td>2</td><td>行政事項確認</td><td>寄發會議通知、與會人員確認、簽到簿、座位名牌、簡報資料準備及列印、議程表列印</td></tr>
+            <tr><td>3</td><td>場地及設備確認</td><td>電腦及投影設備、麥克風及影音、雷射筆、錄音筆、相機及拍攝人員、簽到引導人員、簡報播放人員、茶水點心、現場機動支援、場地復原</td></tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-title">活動分工表（重點工作項目）</h3>
+    <ul class="clean">
+        <li>參展廠商資料確認</li>
+        <li>設計圖確認</li>
+        <li>確認便當&飲料</li>
+        <li>講者座位牌</li>
+        <li>發mail提醒進場&講者</li>
+        <li>確認輸出物（第一街取貨）</li>
+        <li>盤點用品：H架4支、工具箱、簽到表、報到處、抽獎處、獎品表、五分鐘提醒、筆、電腦、簡報筆、電池、資料袋、禮品、領據、簡報播放檔、相機、名片盒、抽獎物、講者座位牌</li>
+        <li>進場布置（全體工作人員到場準備）</li>
+        <li>第一排留貴賓席</li>
+        <li>主持人到場彩排</li>
+        <li>廠商進場引導（簽到、領禮品、便當）</li>
+        <li>場內設備確認</li>
+        <li>報到台準備完成</li>
+        <li>貴賓講者報到引導</li>
+        <li>內場機動（簡報撥放、場控、時間控制）</li>
+        <li>外場機動（與內場搭配）</li>
+        <li>內場換場</li>
+        <li>場地復原</li>
+    </ul>
+
+    <h3 class="section-title">記者會準備文件</h3>
+    <div class="card-grid">
+        <div class="card">
+            <h4>新聞稿</h4>
+            <p>含發稿單位、發稿日期、聯絡人、聯絡電話、標題、內文（公司簡介、補助亮點、產品/技術說明、執行成果）</p>
+        </div>
+        <div class="card">
+            <h4>採訪通知</h4>
+            <p>含活動標題、活動目的、亮點預告、時間、地點、流程表</p>
+        </div>
+        <div class="card">
+            <h4>致詞稿</h4>
+            <p>市長/長官致詞稿，由廠商成果切入產業政策說明</p>
+        </div>
+        <div class="card">
+            <h4>背板、展架製作</h4>
+            <p>視覺設計及輸出</p>
+        </div>
+        <div class="card">
+            <h4>成果露出</h4>
+            <p>媒體報導彙整、新聞效益統計</p>
+        </div>
+        <div class="card">
+            <h4>滿意度問卷調查</h4>
+            <p>活動後問卷回收與分析</p>
+        </div>
+    </div>
+</section>
+
+<section id="ch7">
+    <h2 class="chapter">7. 稽核SOP</h2>
+
+    <h3 class="section-title">稽核流程</h3>
+    <p>專案辦公室建立內部稽核機制，定期對作業流程進行檢視，確保各項作業符合SOP。</p>
+
+    <h3 class="section-title">稽核確認表</h3>
+    <table>
+        <thead><tr><th>欄位</th><th>內容</th></tr></thead>
+        <tbody>
+            <tr><td>稽核人</td><td>填寫稽核人員姓名</td></tr>
+            <tr><td>日期</td><td>年/月/日</td></tr>
+            <tr><td>稽核事項</td><td>填寫稽核主題</td></tr>
+            <tr><td>稽核項目</td><td>具體稽核項目</td></tr>
+            <tr><td>稽核狀況</td><td>□皆依流程辦理／□產生缺失</td></tr>
+            <tr><td>稽核說明</td><td>說明稽核發現</td></tr>
+            <tr><td>改善情形</td><td>缺失改善作法及完成情形</td></tr>
+            <tr><td>主管簽核</td><td>主管確認簽章</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="ch8">
+    <h2 class="chapter">8. 線上申請作業SOP</h2>
+
+    <h3 class="section-title">線上申請作業流程（申請人端）</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>初次登入線上申請系統</h5>
+            <p>點選「線上申請入口」→「申請帳號」→ 填寫申請人資料後「送出」→ 收到申請帳號密碼成功通知信件</p>
+            <p style="margin-top:8px;"><span class="badge badge-key">注意</span>同一公司、商業、外公在台分公司及財（社）團法人等，<strong>都只能申請一組帳號</strong>（系統以統編識別），未來再度申請仍使用本組帳號密碼。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>進入系統送出申請</h5>
+            <p>輸入「計畫基本資料」→「檢附書表」→「選擇檔案」→ 選擇撰寫完成的申請計畫書 → 「上傳檔案」→「送出申請」→ 收到系統發信「廠商申請單送出通知」</p>
+            <p style="margin-top:8px;"><strong>注意事項：</strong></p>
+            <ul>
+                <li>基本資料內計畫主持人與財務會計人不得為同一人</li>
+                <li>若計畫內有編列委外項目、房地租金請填寫與計畫書一致之對象、項目及金額</li>
+                <li>單位為「元」</li>
+            </ul>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>專案辦公室受理案件</h5>
+            <p>專案辦公室受理案件 → 收到系統發信「收件後通知廠商專員處理中」（信件會顯示專案辦公室回覆期限）</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4</span>
+            <h5>處理結果通知及回覆</h5>
+            <p>專案辦公室送出修正意見 → 廠商收到「待修正計畫內容通知」（含建議修正意見、修正回覆期限）→ 修正計畫書內容</p>
+            <p>進入「線上申請入口」→「檢附書表」→ 選擇修正後計畫書 →「上傳檔案」→「管理」→「回覆修正意見」→ 專案辦公室收到系統發信「廠商修正完成通知」</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 5</span>
+            <h5>通知確認無誤可送紙本件</h5>
+            <p>專案辦公室確認計畫書內容無誤 → 產出具浮水印之申請書及計畫書 → 廠商收到「申請書及計畫書用印後寄回通知」</p>
+            <p>進入「線上申請入口」→ 印出申請書及計畫書，並備妥申請書所列之應備文件送出紙本1份到專案辦公室。</p>
+            <p><span class="badge badge-must">注意</span>線上申請確認後，<strong>仍須送出紙本文件申請才算是完成遞件</strong>。</p>
+        </div>
+    </div>
+
+    <h3 class="section-title">線上申請作業流程（辦公室端）</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>線上受理申請案件</h5>
+            <ul>
+                <li>首頁進入「系統管理」→「案件」→「申請案轉入後台作業」→ 填寫「申請編號」</li>
+                <li>檢查「申請人基本資料」→ 如有修正點選右下角「儲存」</li>
+                <li>檢查計畫書內容 → 點選「檢附書表」</li>
+                <li>「管理」→ 下方表格 → 功能 → 點選「專員確認」</li>
+            </ul>
+            <p style="margin-top:8px;"><span class="badge badge-key">提醒</span>點選申請編號才可進入申請案；務必再次確認申請資格是否符合。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2 退回修正</span>
+            <h5>須修正申請案件內容</h5>
+            <p>「專員確認」→「結果」→「返回修改補件」→「廠商修正期限日期」（給予3日）→ 填入「專員意見」→「專員確認」→ 系統發信「待修正計畫內容通知」</p>
+            <p>申請人回覆後重複流程，確認無誤後改為點選「資格符合」。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3 資格符合</span>
+            <h5>資格符合受理案件</h5>
+            <p>「專員確認」→「結果」→「資格符合」→ 填入「專員意見」並輸入提醒事項 → 申請人收到系統發信「申請書及計畫書用印後寄回通知」</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 4 紙本受理</span>
+            <h5>專案辦公室收到紙本文件</h5>
+            <p>受理紙本申請文件 → 確認無誤 → 進入線上申請系統選取案件 →「管理」→「正式受理」→ 鍵入「掛文文號」、「掛號日期」、「計畫編號」</p>
+            <p><strong>計畫編碼原則：</strong>年度（民國年；105）+ 補助項目代碼（1碼）+ 流水號（4碼；0001）</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 5</span>
+            <h5>申請案轉入後台</h5>
+            <p>「案件」→「案件管理」→ 確認申請案件</p>
+        </div>
+    </div>
+</section>
+
+<section id="ch9">
+    <h2 class="chapter">9. 其他公文SOP</h2>
+
+    <h3 class="section-title">合庫申貸辦理流程</h3>
+    <div class="vflow">
+        <div class="vflow-item">
+            <span class="step-tag">Step 1</span>
+            <h5>廠商送件後確認文件</h5>
+            <p>確認自我檢核表等文件是否填寫正確，並確認廠商希望配合之分行，如無誤則請逸祥通知合庫（暫不掛公文號）。</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 2</span>
+            <h5>合庫確認可收件後</h5>
+            <p>合庫確認可收件後 → 掛公文號</p>
+        </div>
+        <div class="vflow-item">
+            <span class="step-tag">Step 3</span>
+            <h5>進行公文辦理</h5>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- 附錄 -->
+<!-- ============================================ -->
+<section id="appendix">
+    <h2 class="chapter">附錄：關鍵時限與檢核清單</h2>
+
+    <h3 class="section-title">重要時限對照表</h3>
+    <table>
+        <thead><tr><th>作業階段</th><th>時限</th><th>備註</th></tr></thead>
+        <tbody>
+            <tr><td>首次補件審認</td><td>10個工作日內</td><td>同步發送第一次一次告知單</td></tr>
+            <tr><td>第一次補件完成</td><td>10個工作日內</td><td>申請人完成補正及回復</td></tr>
+            <tr><td>第二次補件完成</td><td>5個工作日內</td><td>第二次告知後</td></tr>
+            <tr><td>分組審查會議通知</td><td>會前14天</td><td>通知申請人會議時間地點</td></tr>
+            <tr><td>主審委員彙整書審意見</td><td>會前10天</td><td>線上做出彙整</td></tr>
+            <tr><td>書審意見彙總表寄申請人</td><td>會前7天</td><td>含簡報製作格式</td></tr>
+            <tr><td>會議提醒</td><td>會前1日</td><td>提醒委員會議時間及注意事項</td></tr>
+            <tr><td>第一期款請款通知信</td><td>核定函發出後15日內</td><td></td></tr>
+            <tr><td>修正後計畫書遞交</td><td>收到核定函後30天內</td><td></td></tr>
+            <tr><td>獎勵補貼請款受理期間</td><td>當年度9-10月</td><td>10月31日前完成請款掛號</td></tr>
+            <tr><td>計畫變更申請</td><td>計畫執行結束前一個月</td><td>須以紙本函文申請</td></tr>
+            <tr><td>實地查訪</td><td>計畫開始後6個月</td><td>建議提早2~3個月完成</td></tr>
+            <tr><td>每月查訪報告繳交</td><td>隔月5號之前</td><td></td></tr>
+            <tr><td>結案前通知</td><td>計畫期間屆滿前3週</td><td></td></tr>
+            <tr><td>結案審查會通知</td><td>結案前2週</td><td></td></tr>
+            <tr><td>結案補正期限</td><td>最長30日</td><td>補正完成後始得結案請款</td></tr>
+            <tr><td>第二期款撥款審核</td><td>最長45天</td><td>撥款公文後5~7工作日入帳</td></tr>
+            <tr><td>會計憑證保存</td><td>10年</td><td>依審計法規定</td></tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-title">關鍵金額／比例對照表</h3>
+    <div class="stats">
+        <div class="stat"><div class="num">5%</div><div class="label">社會回饋占計畫經費比例上限</div></div>
+        <div class="stat"><div class="num">50%</div><div class="label">第一期款占核定補助款比例</div></div>
+        <div class="stat"><div class="num">30%</div><div class="label">履約保證金占第一期款比例</div></div>
+        <div class="stat"><div class="num">3個月</div><div class="label">履約保證金到期日（計畫結束後）</div></div>
+        <div class="stat"><div class="num">2,500元</div><div class="label">委員單家查訪出席暨審查費</div></div>
+        <div class="stat"><div class="num">1,000元</div><div class="label">委員當日第二家起每案審查費</div></div>
+        <div class="stat"><div class="num">2,000元</div><div class="label">每次出席費上限/人</div></div>
+        <div class="stat"><div class="num">13位</div><div class="label">審議大會法定出席委員人數</div></div>
+    </div>
+
+    <h3 class="section-title">新人作業常用窗口聯絡資訊</h3>
+    <table>
+        <thead><tr><th>業務分工</th><th>負責人</th><th>備註</th></tr></thead>
+        <tbody>
+            <tr><td>創業／品牌計畫結案窗口</td><td>陳柏翰</td><td>變更與結案問題請洽</td></tr>
+            <tr><td>研發／育成計畫結案窗口</td><td>楊琇文</td><td>變更與結案問題請洽</td></tr>
+            <tr><td>獎勵補貼窗口</td><td>胡家寧</td><td>排審人員，過案名單彙整</td></tr>
+            <tr><td>登記桌（掛號扣時間）</td><td>余欣（分機6572）</td><td>10樓分文</td></tr>
+            <tr><td>合庫申貸通知</td><td>逸祥</td><td>暫不掛公文號</td></tr>
+            <tr><td>專案辦公室主機線</td><td>1999轉6625、1428、1429</td><td>外縣市請撥02-27208889</td></tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-title">關鍵系統／網站</h3>
+    <table>
+        <thead><tr><th>系統名稱</th><th>用途</th><th>網址</th></tr></thead>
+        <tbody>
+            <tr><td>獎補計畫官網</td><td>對外宣傳、廠商諮詢申請</td><td>https://www.industry-incentive.taipei/</td></tr>
+            <tr><td>官網後台</td><td>諮詢申請管理</td><td>https://industry-incentive.taipei/WebAdmin/login.php</td></tr>
+            <tr><td>TOPS台北好購推廣平台</td><td>本市優質新創及中小企業登錄</td><td>https://tops.taipei/</td></tr>
+            <tr><td>計畫網站／管考專區</td><td>結案階段相關文件</td><td>https://industry-incentive.taipei/download/35</td></tr>
+        </tbody>
+    </table>
+
+    <h3 class="section-title">新人入門檢核清單</h3>
+    <div class="alert alert-success">
+        <strong>第一週應熟悉項目</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>了解五大補助類別（創業、研發、品牌、創新育成、獎勵補貼）申請資格</li>
+            <li>熟悉計畫生命週期：申請→審查→審議→管考→結案</li>
+            <li>熟悉申請文件自我檢核表內容</li>
+            <li>學會操作線上申請系統（辦公室端）</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-success">
+        <strong>第一個月應上手項目</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>能獨立操作初審意見製作（注意「臺」字、「該公司」用語）</li>
+            <li>能正確撰寫一次告知單、補件通知Email</li>
+            <li>熟悉公文併案、勾稽、改審議操作</li>
+            <li>了解分組審查會議辦理流程及時限</li>
+            <li>能說明各補助類別請款應備文件差異</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-success">
+        <strong>三個月內應具備能力</strong>
+        <ul style="margin-left:20px;margin-top:8px;">
+            <li>獨立辦理完整一案的審查至審議流程</li>
+            <li>獨立辦理第一期款／第二期款請款作業</li>
+            <li>獨立辦理實地查訪及異常個案處理</li>
+            <li>熟悉計畫變更項目一覽表，能判斷是否須委員同意</li>
+            <li>能撰寫核定通知函、結案通知函</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>本手冊整理自《115年度臺北市獎勵補助計畫作業手冊SOP_final11504271810》</p>
+    <p>編製單位：臺北市產業獎勵補助專案辦公室　|　版本：115年04月</p>
+</footer>
+
+</main>
+</div>
+
+<script>
+(function() {
+    var toggle = document.getElementById('menuToggle');
+    var sidebar = document.getElementById('sidebar');
+    var overlay = document.getElementById('menuOverlay');
+
+    function openMenu() {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+        toggle.innerHTML = '✕';
+        toggle.setAttribute('aria-label', '關閉選單');
+    }
+    function closeMenu() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+        toggle.innerHTML = '☰';
+        toggle.setAttribute('aria-label', '開啟選單');
+    }
+    function toggleMenu() {
+        if (sidebar.classList.contains('active')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    toggle.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    var navLinks = sidebar.querySelectorAll('nav a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                closeMenu();
+            }
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+})();
+</script>
+
+</body>
+</html>
