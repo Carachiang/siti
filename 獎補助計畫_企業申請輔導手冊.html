@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>臺北市產業發展獎勵補助計畫 ─ 企業申請輔導手冊</title>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:"Microsoft JhengHei","微軟正黑體","PingFang TC","Noto Sans TC",sans-serif;line-height:1.7;color:#2c3e50;background:#f4f6f9;-webkit-text-size-adjust:100%}
+a{color:#2c5283;text-decoration:none}
+a:hover{text-decoration:underline}
+.search-bar{position:sticky;top:0;z-index:800;background:rgba(244,246,249,0.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px 0;margin:-40px -56px 24px;padding-left:56px;padding-right:56px;border-bottom:1px solid rgba(0,0,0,0.06)}
+.search-wrap{position:relative;max-width:760px;margin:0 auto}
+.search-input{width:100%;padding:12px 44px 12px 44px;font-size:15px;border:2px solid #d6e2ee;border-radius:30px;background:#fff;font-family:inherit;color:#2c3e50;transition:all 0.2s;box-shadow:0 2px 8px rgba(30,58,95,0.08);outline:none}
+.search-input:focus{border-color:#2c5283;box-shadow:0 4px 16px rgba(44,82,131,0.15)}
+.search-input::placeholder{color:#94a3b8}
+.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:#94a3b8;pointer-events:none;font-size:16px}
+.search-clear{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:#e3e8ef;color:#64748b;border:none;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;display:none;align-items:center;justify-content:center;line-height:1}
+.search-clear:hover{background:#cbd5e1;color:#334155}
+.search-clear.visible{display:flex}
+.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.15);max-height:60vh;overflow-y:auto;display:none;z-index:850}
+.search-results.visible{display:block}
+.search-result-item{padding:14px 20px;border-bottom:1px solid #f1f5f9;cursor:pointer;transition:background 0.15s;display:block;text-decoration:none;color:inherit}
+.search-result-item:last-child{border-bottom:none}
+.search-result-item:hover,.search-result-item.active{background:#f0f5fa}
+.search-result-section{font-size:12px;color:#2c5283;font-weight:600;margin-bottom:4px}
+.search-result-title{font-size:15px;color:#1e3a5f;font-weight:600;margin-bottom:4px}
+.search-result-snippet{font-size:13px;color:#64748b;line-height:1.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.search-result-snippet mark,.search-result-title mark{background:#fff3cd;color:#856404;padding:0 2px;border-radius:2px;font-weight:700}
+.search-empty{padding:24px;text-align:center;color:#94a3b8;font-size:14px}
+.search-stats{padding:10px 20px;background:#f8fafc;color:#64748b;font-size:12px;border-bottom:1px solid #e2e8f0}
+.search-target-flash{animation:targetFlash 2s ease-out}
+@keyframes targetFlash{0%{background-color:#fff3cd}100%{background-color:transparent}}
+.menu-toggle{display:none;position:fixed;top:16px;left:16px;z-index:1001;background:#1e3a5f;color:#fff;border:none;width:44px;height:44px;border-radius:8px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-size:20px;align-items:center;justify-content:center}
+.menu-toggle:hover{background:#2c5283}
+.menu-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999}
+.menu-overlay.active{display:block}
+.container{display:flex;min-height:100vh}
+aside{width:280px;background:#1e3a5f;color:#fff;position:fixed;height:100vh;overflow-y:auto;padding:24px 0;box-shadow:2px 0 8px rgba(0,0,0,0.1);z-index:1000;transition:transform 0.3s ease}
+aside h2{font-size:16px;padding:0 20px 16px;border-bottom:1px solid #2c5283;color:#ffd54f;line-height:1.4}
+aside nav{margin-top:12px}
+aside nav a{display:block;padding:10px 20px;color:#d6e2ee;text-decoration:none;font-size:14px;border-left:3px solid transparent;transition:all 0.2s}
+aside nav a:hover{background:#2c5283;color:#fff;border-left-color:#ffd54f;text-decoration:none}
+aside nav a.sub{padding-left:36px;font-size:13px;color:#a8b8cc}
+aside nav .chapter-title{padding:12px 20px 4px;font-size:12px;color:#7a9bc4;letter-spacing:1px;margin-top:8px}
+main{margin-left:280px;flex:1;padding:40px 56px;max-width:calc(100% - 280px)}
+.hero{background:linear-gradient(135deg,#1e3a5f 0%,#2c5283 100%);color:#fff;padding:48px 40px;border-radius:12px;margin-bottom:40px;box-shadow:0 4px 16px rgba(30,58,95,0.2)}
+.hero .tag{display:inline-block;background:#ffd54f;color:#1e3a5f;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:30px;margin-bottom:12px;line-height:1.3}
+.hero p{font-size:16px;opacity:0.9}
+.hero .meta{margin-top:20px;font-size:14px;opacity:0.8}
+.hero .meta a{color:#ffd54f}
+section{margin-bottom:56px;scroll-margin-top:80px}
+h2.chapter{font-size:26px;color:#1e3a5f;padding:16px 0 16px 20px;border-left:6px solid #ffd54f;background:#fff;border-radius:0 8px 8px 0;margin-bottom:24px;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+h3.section-title{font-size:20px;color:#1e3a5f;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #e3e8ef;scroll-margin-top:80px}
+h4{font-size:16px;color:#2c5283;margin:20px 0 10px}
+p{margin-bottom:12px}
+.card{background:#fff;padding:24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06);margin-bottom:20px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:20px 0}
+.card-grid .card{margin:0;border-top:4px solid #2c5283}
+.card-grid .card h4{margin-top:0;color:#1e3a5f;font-size:18px}
+.sub-card{background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;margin-bottom:20px}
+.sub-card-head{background:linear-gradient(135deg,#2c5283 0%,#1e3a5f 100%);color:#fff;padding:18px 24px}
+.sub-card-head .badge-cat{display:inline-block;background:#ffd54f;color:#1e3a5f;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;margin-bottom:6px}
+.sub-card-head h4{color:#fff;margin:0;font-size:19px}
+.sub-card-head .slogan{color:#d6e2ee;font-size:13px;margin-top:4px}
+.sub-card-body{padding:20px 24px}
+.sub-card-body .meta-row{display:grid;grid-template-columns:120px 1fr;gap:10px;padding:8px 0;border-bottom:1px dashed #e3e8ef;font-size:14px}
+.sub-card-body .meta-row:last-child{border-bottom:none}
+.sub-card-body .meta-row .label{color:#64748b;font-weight:600}
+.sub-card-body .meta-row .value{color:#2c3e50}
+.sub-card-body .value strong{color:#c62828}
+.sub-card-body .value a{color:#1976d2;font-weight:600}
+.alert{padding:16px 20px;border-radius:6px;margin:16px 0;border-left:4px solid}
+.alert-warning{background:#fff8e1;border-color:#f9a825;color:#5d4e00}
+.alert-info{background:#e3f2fd;border-color:#1976d2;color:#0d47a1}
+.alert-danger{background:#ffebee;border-color:#c62828;color:#b71c1c}
+.alert-success{background:#e8f5e9;border-color:#2e7d32;color:#1b5e20}
+.alert strong{display:block;margin-bottom:6px;font-size:15px}
+.alert a{color:inherit;text-decoration:underline;font-weight:600}
+table{width:100%;border-collapse:collapse;margin:16px 0;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.06);font-size:14px}
+th{background:#1e3a5f;color:#fff;padding:12px;text-align:left;font-weight:600}
+td{padding:10px 12px;border-bottom:1px solid #e3e8ef;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even){background:#f8fafc}
+.flow{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0;align-items:stretch}
+.flow-step{flex:1;min-width:140px;background:#fff;border:2px solid #2c5283;border-radius:8px;padding:14px;text-align:center}
+.flow-step .num{display:inline-block;width:32px;height:32px;line-height:32px;background:#2c5283;color:#fff;border-radius:50%;font-weight:700;margin-bottom:6px}
+.flow-step h5{color:#1e3a5f;font-size:14px;margin-bottom:4px}
+.flow-step p{font-size:12px;color:#555;margin:0}
+.flow-arrow{display:flex;align-items:center;color:#2c5283;font-size:22px;font-weight:700}
+.vflow{margin:20px 0}
+.vflow-item{background:#fff;border-left:4px solid #2c5283;padding:16px 20px;margin-bottom:8px;border-radius:0 6px 6px 0;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.vflow-item .step-tag{display:inline-block;background:#2c5283;color:#fff;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;margin-bottom:8px}
+.vflow-item h5{color:#1e3a5f;font-size:16px;margin-bottom:6px}
+.vflow-item p,.vflow-item ul{font-size:14px;color:#444}
+.vflow-item ul{margin-left:20px;margin-top:4px}
+.qa-item{background:#fff;border-radius:8px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,0.06);overflow:hidden}
+.qa-q{padding:14px 18px;background:#f8fafc;color:#1e3a5f;font-weight:600;font-size:15px;border-bottom:1px solid #e3e8ef}
+.qa-q .qmark{display:inline-block;background:#2c5283;color:#fff;width:24px;height:24px;border-radius:50%;text-align:center;line-height:24px;font-size:13px;margin-right:8px;font-weight:700}
+.qa-a{padding:14px 18px;color:#475569;font-size:14px;line-height:1.75}
+.qa-a .amark{display:inline-block;background:#ffd54f;color:#1e3a5f;width:24px;height:24px;border-radius:50%;text-align:center;line-height:24px;font-weight:700;margin-right:8px;font-size:13px}
+.qa-a ul{margin:8px 0 8px 30px}
+.qa-a li{margin-bottom:4px}
+.qa-a a{color:#1976d2;font-weight:600}
+.script{background:#fefce8;border:1px solid #facc15;border-radius:8px;padding:18px 20px;margin:12px 0 18px;position:relative}
+.script::before{content:"📞 通話腳本";position:absolute;top:-10px;left:16px;background:#facc15;color:#854d0e;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700}
+.script-line{margin:8px 0;line-height:1.7;font-size:14px}
+.script-line.client{color:#64748b}
+.script-line.you{color:#1e3a5f}
+.script-line .who{display:inline-block;min-width:60px;font-weight:700;color:#2c5283}
+.dl-block{background:#fff;border-radius:8px;padding:16px;margin:12px 0;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.dl-block h5{color:#1e3a5f;margin-bottom:10px;font-size:15px;padding-bottom:6px;border-bottom:1px solid #e3e8ef}
+.dl-item{display:flex;align-items:center;padding:8px 4px;font-size:13.5px;flex-wrap:wrap;gap:6px}
+.dl-item .icon{width:32px;height:32px;background:#e3f2fd;color:#1976d2;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;margin-right:10px;flex-shrink:0}
+.dl-item .name{flex:1;color:#334155;min-width:200px}
+.dl-item a{color:#2c5283;text-decoration:none;font-size:12px;font-weight:600;padding:3px 8px;background:#e3f2fd;border-radius:4px}
+.dl-item a:hover{background:#bbdefb;text-decoration:none}
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;margin:0 4px}
+.badge-time{background:#e3f2fd;color:#1565c0}
+.badge-doc{background:#f3e5f5;color:#6a1b9a}
+.badge-key{background:#fff8e1;color:#f57c00}
+.badge-must{background:#ffebee;color:#c62828}
+.badge-amt{background:#e8f5e9;color:#2e7d32}
+.badge-new{background:#fce4ec;color:#c2185b}
+ul.clean,ol.clean{margin-left:24px;margin-bottom:12px}
+ul.clean li,ol.clean li{margin-bottom:6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:20px 0}
+.stat{background:linear-gradient(135deg,#fff 0%,#f0f5fa 100%);padding:20px;border-radius:8px;text-align:center;border-bottom:3px solid #2c5283}
+.stat .num{font-size:22px;font-weight:700;color:#1e3a5f}
+.stat .label{font-size:13px;color:#666;margin-top:4px}
+.cta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.cta{background:linear-gradient(135deg,#1e3a5f 0%,#2c5283 100%);color:#fff !important;padding:18px 20px;border-radius:10px;text-decoration:none;display:block;transition:transform 0.2s}
+.cta:hover{transform:translateY(-2px);text-decoration:none;box-shadow:0 4px 12px rgba(30,58,95,0.3)}
+.cta .cta-icon{font-size:24px;margin-bottom:6px}
+.cta .cta-title{font-weight:700;font-size:15px;margin-bottom:3px}
+.cta .cta-sub{font-size:12px;opacity:0.85}
+footer{margin-top:60px;padding:24px;background:#1e3a5f;color:#d6e2ee;border-radius:8px;text-align:center;font-size:13px}
+footer a{color:#ffd54f;text-decoration:none}
+@media print{aside,.menu-toggle,.menu-overlay,.search-bar{display:none !important}main{margin-left:0;max-width:100%;padding:20px}.hero{box-shadow:none}section,.card,table,.sub-card{page-break-inside:avoid}}
+@media(max-width:1024px){aside{width:240px}main{margin-left:240px;padding:32px 32px}.hero{padding:36px 28px}.hero h1{font-size:26px}h2.chapter{font-size:22px}h3.section-title{font-size:18px}.search-bar{margin:-32px -32px 20px;padding-left:32px;padding-right:32px}.sub-card-body .meta-row{grid-template-columns:100px 1fr}}
+@media(max-width:768px){html{font-size:15px}.menu-toggle{display:flex}aside{width:280px;transform:translateX(-100%);box-shadow:4px 0 16px rgba(0,0,0,0.3)}aside.active{transform:translateX(0)}main{margin-left:0;max-width:100%;padding:72px 16px 24px}.search-bar{margin:-72px -16px 16px;padding:10px 16px 10px 68px;top:0}.search-input{padding:10px 40px 10px 40px;font-size:14px}.search-result-item{padding:12px 16px}.search-result-title{font-size:14px}.search-result-snippet{font-size:12px}.hero{padding:28px 20px;margin-bottom:28px;border-radius:10px}.hero h1{font-size:22px;line-height:1.35}.hero p{font-size:14px}section{margin-bottom:40px}h2.chapter{font-size:20px;padding:12px 0 12px 14px;border-left-width:5px;margin-bottom:18px}h3.section-title{font-size:17px;margin:24px 0 12px}h4{font-size:15px}.card{padding:18px}.card-grid{grid-template-columns:1fr;gap:12px}.alert{padding:14px 16px}.flow{flex-direction:column;gap:8px}.flow-step{min-width:auto;width:100%}.flow-arrow{justify-content:center;transform:rotate(90deg);font-size:20px}.vflow-item{padding:14px 16px}.vflow-item h5{font-size:15px}.vflow-item p,.vflow-item ul{font-size:13px}table{font-size:13px}th,td{padding:8px 10px}section table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.stats{grid-template-columns:repeat(2,1fr);gap:10px}.stat .num{font-size:20px}.sub-card-head{padding:14px 18px}.sub-card-head h4{font-size:17px}.sub-card-body{padding:16px 18px}.sub-card-body .meta-row{grid-template-columns:90px 1fr;font-size:13px}.qa-q{font-size:14px;padding:14px 16px}.qa-a{font-size:13px;padding:14px 16px}.dl-item{font-size:12.5px}.script{padding:14px 16px}.cta-grid{grid-template-columns:1fr}}
+@media(max-width:380px){main{padding:64px 12px 20px}.hero{padding:22px 16px}.hero h1{font-size:19px}h2.chapter{font-size:18px}.stats{grid-template-columns:1fr}.card{padding:14px}}</style>
+</head>
+<body>
+<button class="menu-toggle" id="menuToggle" aria-label="開啟選單">☰</button>
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="container">
+<aside id="sidebar">
+<h2>企業申請輔導手冊<br><small style="font-size:13px;font-weight:normal;color:#a8b8cc;">臺北市產業發展<br>獎勵補助計畫</small></h2>
+<nav>
+<div class="chapter-title">▍快速開始</div>
+<a href="#overview">手冊使用說明</a>
+<a href="#quick">快速服務通道</a>
+<a href="#program">計畫總覽</a>
+
+<div class="chapter-title">▍六大補助詳解</div>
+<a href="#sub-startup">1. 創業補助</a>
+<a href="#sub-rd">2. 研發補助</a>
+<a href="#sub-rd-1" class="sub">創新研發補助</a>
+<a href="#sub-rd-2" class="sub">主題式研發補助</a>
+<a href="#sub-rd-3" class="sub">創新加速補助</a>
+<a href="#sub-brand">3. 品牌建立補助</a>
+<a href="#sub-incubate">4. 創新育成補助</a>
+<a href="#sub-inc-1" class="sub">創新育成補助</a>
+<a href="#sub-inc-2" class="sub">天使投資補助</a>
+<a href="#sub-inc-3" class="sub">國際育成補助</a>
+<a href="#sub-subsidy">5. 獎勵補貼</a>
+<a href="#sub-advance">6. 新創拔尖補助</a>
+
+<div class="chapter-title">▍申請流程</div>
+<a href="#process">申請完整流程</a>
+<a href="#online-apply">線上申請操作</a>
+
+<div class="chapter-title">▍表單與SOP</div>
+<a href="#forms-apply">申請階段表單</a>
+<a href="#forms-exec">執行階段表單</a>
+<a href="#forms-other">其他資源</a>
+
+<div class="chapter-title">▍應對指引</div>
+<a href="#faq">常見問題FAQ</a>
+<a href="#scripts">企業來電應對腳本</a>
+<a href="#scenarios">常見情境處理</a>
+
+<div class="chapter-title">▍資源資訊</div>
+<a href="#contact">聯絡與外部資源</a>
+<a href="#checklist">新人能力檢核</a>
+</nav>
+</aside>
+<main>
+
+<!-- SEARCH BAR -->
+<div class="search-bar">
+<div class="search-wrap">
+<span class="search-icon">🔍</span>
+<input type="text" class="search-input" id="searchInput" placeholder="搜尋手冊（例：創業補助、第一期款、會計師、實地查訪、變更…）" autocomplete="off">
+<button class="search-clear" id="searchClear" aria-label="清除搜尋">✕</button>
+<div class="search-results" id="searchResults"></div>
+</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<span class="tag">企業申請輔導 · 新人必讀</span>
+<h1>臺北市產業發展獎勵補助計畫<br>企業申請輔導手冊</h1>
+<p>本手冊依據官方網站內容整理，協助新進同仁快速掌握獎補助計畫、回應企業諮詢，並指引企業到正確位置抓取所需表單與文件。</p>
+<div class="meta">資料來源：<a href="https://www.industry-incentive.taipei/" target="_blank">https://www.industry-incentive.taipei/</a> ｜ 接聽電話：02-27208889 / 1999轉1429、1428</div>
+</div>
+
+<!-- 使用說明 -->
+<section id="overview">
+<h2 class="chapter">手冊使用說明</h2>
+<div class="card">
+<h4>這本手冊能幫你做什麼</h4>
+<p>當企業來電諮詢補助時，本手冊可協助你：</p>
+<ul class="clean">
+<li><strong>快速判斷</strong>企業適合哪一類補助</li>
+<li><strong>立即回答</strong>申請資格、補助額度、所需文件等常見問題</li>
+<li><strong>正確指引</strong>企業到官網對應頁面或下載連結抓資料</li>
+<li><strong>標準應對</strong>不同情境的來電對話</li>
+</ul>
+</div>
+<div class="alert alert-info"><strong>使用技巧</strong>頁面最上方有搜尋列，輸入關鍵字（例：「履約保證金」「會計師簽證」「第二期款」）即可快速跳轉。手機版請按左上角 ☰ 開啟章節目錄。</div>
+</section>
+
+<!-- 快速服務通道 -->
+<section id="quick">
+<h2 class="chapter">快速服務通道</h2>
+<p>常用頁面快速直達 ─ 接電話時最常用的對外連結，直接念給企業聽或寄連結給對方。</p>
+<div class="cta-grid">
+<a class="cta" href="https://www.industry-incentive.taipei/application/" target="_blank"><div class="cta-icon">📝</div><div class="cta-title">線上申請入口</div><div class="cta-sub">企業送件起點</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/service/2" target="_blank"><div class="cta-icon">📊</div><div class="cta-title">如何申請（流程圖）</div><div class="cta-sub">六步驟說明</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/counseling_form/" target="_blank"><div class="cta-icon">💬</div><div class="cta-title">諮詢申請</div><div class="cta-sub">每場40分鐘預約</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/qa/" target="_blank"><div class="cta-icon">❓</div><div class="cta-title">常見問題FAQ</div><div class="cta-sub">官方Q&A</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/download/1" target="_blank"><div class="cta-icon">📥</div><div class="cta-title">申請階段下載</div><div class="cta-sub">申請書 / 計畫書</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/download/2" target="_blank"><div class="cta-icon">⚙️</div><div class="cta-title">執行階段下載</div><div class="cta-sub">請款 / 查訪 / 結案</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/download/56" target="_blank"><div class="cta-icon">🎯</div><div class="cta-title">美國關稅加碼20%</div><div class="cta-sub">特別專案</div></a>
+<a class="cta" href="https://www.industry-incentive.taipei/contact/" target="_blank"><div class="cta-icon">📧</div><div class="cta-title">意見信箱</div><div class="cta-sub">轉介單位</div></a>
+</div>
+</section>
+
+<!-- 計畫總覽 -->
+<section id="program">
+<h2 class="chapter">計畫總覽</h2>
+<div class="alert alert-info"><strong>一句話介紹</strong>臺北市政府依據「臺北市產業發展自治條例」，以創新創業、創新研發、創新加速、品牌加值、新創拔尖、育成天使等創新補助，並提供以租金、薪資、利息等投資補貼，為臺北市企業提供全程全方位獎勵補助資源。</div>
+
+<h3 class="section-title">五大資源特色</h3>
+<ul class="clean">
+<li>針對本市企業提供 <strong>創新及投資之實質協助</strong></li>
+<li><strong>全國縣市政府首創</strong>，提供全程創新、全方位獎勵補助</li>
+<li>支持多元化產業生態系統，<strong>不限行業別與產業別</strong></li>
+<li>補助機制符合企業發展生命週期各階段所需</li>
+<li>貢獻本市產業發展及社會回饋</li>
+</ul>
+
+<h3 class="section-title">六大補助一覽</h3>
+<table>
+<thead><tr><th>類別</th><th>適用對象</th><th>補助額度上限</th><th>受理方式</th></tr></thead>
+<tbody>
+<tr><td><strong>創業補助</strong></td><td>新設立 1 年內公司／商業</td><td>100 萬元（50%）</td><td>隨到隨辦</td></tr>
+<tr><td><strong>創新研發補助</strong></td><td>設立滿 1 年以上</td><td>500 萬元（50%）</td><td>隨到隨辦</td></tr>
+<tr><td><strong>主題式研發補助</strong></td><td>設立滿 1 年以上</td><td>200 萬元（50%）</td><td>批次（公告徵件）</td></tr>
+<tr><td><strong>創新加速補助</strong></td><td>設立滿 1 年以上、已通過小型場域驗證</td><td>300 萬元（50%）</td><td>隨到隨辦</td></tr>
+<tr><td><strong>品牌建立補助</strong></td><td>設立滿 1 年以上</td><td>500 萬元（50%）</td><td>隨到隨辦</td></tr>
+<tr><td><strong>創新育成補助</strong></td><td>本市公司／商業／學校／財社團法人</td><td>300 萬元</td><td>隨到隨辦</td></tr>
+<tr><td><strong>天使投資補助</strong></td><td>同上，投資未滿 5 年新創</td><td>投資金額 10%、最高 300 萬</td><td>隨到隨辦</td></tr>
+<tr><td><strong>國際育成補助</strong></td><td>同上，招攬國際新創落地臺北</td><td>300 萬元</td><td>隨到隨辦</td></tr>
+<tr><td><strong>獎勵補貼</strong></td><td>本市公司／商號／外國公司</td><td>視項目，最高 5,000 萬元</td><td>隨到隨辦</td></tr>
+<tr><td><strong>新創拔尖補助</strong></td><td>設立 1 年以上 8 年內、累積獲投 500 萬</td><td>三階段合計 1,500 萬</td><td>批次（公告徵件）</td></tr>
+</tbody>
+</table>
+
+<h3 class="section-title">計畫成果（截至最新統計）</h3>
+<div class="stats">
+<div class="stat"><div class="num">2,407 案</div><div class="label">核定獎勵補助件數</div></div>
+<div class="stat"><div class="num">31.4 億元</div><div class="label">累計獎勵補助金額</div></div>
+<div class="stat"><div class="num">256 億元</div><div class="label">帶動企業創新投資</div></div>
+<div class="stat"><div class="num">1,398 億元</div><div class="label">增加營收產值</div></div>
+<div class="stat"><div class="num">11,878 人</div><div class="label">提供就業人數</div></div>
+</div>
+</section>
+
+<section id="sub-startup">
+<h2 class="chapter">1. 創業補助</h2>
+
+<div id="sub-startup-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">創業階段</span>
+<h4>創業補助</h4>
+<div class="slogan">發掘潛力新創事業，提供新創初期營運資源</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">新設立 <strong>1 年內</strong> 之臺北市公司或商業</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>每案補助新臺幣 100 萬元（以總經費 50% 為上限）</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">計畫應以技術、服務、產品或內容創新為核心，並具發展潛力之營運模式，須有市場營運目標。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>創業補助計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/3" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/4" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-warning"><strong>新人重點</strong>創業補助是 <u>新公司剛成立 1 年內</u> 的補助，每案最高 100 萬，補助比例 50%。常見問題：成立超過 1 年只能申請「研發補助」或「品牌建立補助」（要設立滿 1 年）。</div>
+</section>
+
+<section id="sub-rd">
+<h2 class="chapter">2. 研發補助</h2>
+<p>研發補助分為三種，<strong>適用對象都是「設立滿 1 年以上」</strong> 的臺北市公司／商業／外國公司在臺分公司，依執行階段選擇：</p>
+<div id="sub-rd-1"></div>
+
+<div id="sub-rd1-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">研發補助</span>
+<h4>創新研發補助</h4>
+<div class="slogan">引導創新技術開發、推動產業升級轉型</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立登記滿 <strong>1 年以上</strong> 之臺北市公司、商業或所在地登記於本市之外國公司</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助計畫總經費 50%、補助款 500 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">計畫應以「技術開發」、「創新服務」或「文創內容」為標的，具備外部擴張性，有實際商轉營運規劃。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>創新研發補助計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得用營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近一年市場營運實績相關證明文件（擇一提供）</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/13" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/6" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div id="sub-rd-2"></div>
+
+<div id="sub-rd2-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">研發補助</span>
+<h4>主題式研發補助</h4>
+<div class="slogan">依政策目標與產業趨勢，鼓勵新興領域發展（批次受理，產業局公告徵件）</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立登記滿 1 年以上之臺北市公司、商業或所在地登記於本市之外國公司</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>每案計畫總經費 400 萬元，每案補助款 200 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">由產業局依政策推動目標與產業發展趨勢，設定補助之產業主題或領域，另行公告受理須知。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>主題式研發計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得用營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近一年市場營運實績相關證明文件（擇一提供）</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/7" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/7" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div id="sub-rd-3"></div>
+
+<div id="sub-rd3-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">研發補助</span>
+<h4>創新加速補助</h4>
+<div class="slogan">協助完成市場驗證、加速擴大事業規模</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立登記滿 1 年以上之臺北市公司、商業或所在地登記於本市之外國公司</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助計畫總經費 50%、補助款 300 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">計畫應以已完成小型場域驗證之創新技術、創新服務或文創內容為標的，提出加速擴大事業規模、加速商業／市場驗證或市場拓展之規劃。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>創新加速補助計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得用營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近一年市場營運實績相關證明文件（擇一提供）</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/8" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/8" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-info"><strong>差異化說明</strong>對企業說明時，可用一句話區隔：「<strong>創新研發</strong> = 從 0 到 1 的開發；<strong>創新加速</strong> = 已有驗證再放大；<strong>主題式研發</strong> = 政府公告徵件題目。」</div>
+</section>
+
+<section id="sub-brand">
+<h2 class="chapter">3. 品牌建立補助</h2>
+
+<div id="sub-brand-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">品牌升級</span>
+<h4>品牌建立補助</h4>
+<div class="slogan">建立企業自有品牌或再升級、提高產品價值與營收獲利</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立登記滿 1 年以上之臺北市公司、商業或所在地登記於本市之外國公司</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助計畫總經費 50%、補助款 500 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">指建立新創品牌、既有品牌升級或再造，具有開發新客群、新市場或建立新通路，有助提升品牌價值與能見度及國際市場競爭優勢，計畫期間須達成經營面效益。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>品牌建立補助計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得用營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近一年市場營運實績相關證明文件（擇一提供）</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/9" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/9" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-warning"><strong>新人重點</strong>品牌建立補助強調 <u>建立國際通路、進入國際市場策略</u>，要有經營面效益。若企業只是想做行銷或廣告，請引導改為合適的補助項目。</div>
+</section>
+
+<section id="sub-incubate">
+<h2 class="chapter">4. 創新育成補助</h2>
+<p>育成類補助分三種，<strong>申請對象包含學校與財社團法人</strong>，目的是培育新創、媒合資源：</p>
+<div id="sub-inc-1"></div>
+
+<div id="sub-inc1-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">育成輔導</span>
+<h4>創新育成補助</h4>
+<div class="slogan">輔導及培育本市新創事業</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立於臺北市之公司、商業、所在地登記於本市之外國公司、財社團法人與學校</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助款 300 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">培育創新領域之新創企業，包含提供業師輔導、資金媒合、人才媒合、技術引進、商機媒合或育成加速，具有可驗證指標與協助產業發展之推動作法。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>創新育成補助計畫書</li><li>公司、商業、學校或財（社）團法人核准設立登記、變更相關證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近一年營利事業所得稅與營業稅申報書；學校或財社團法人最近一年納稅證明資料</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/14" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/11" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div id="sub-inc-2"></div>
+
+<div id="sub-inc2-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">育成輔導</span>
+<h4>天使投資補助</h4>
+<div class="slogan">投資及培育本市未滿 5 年之新創事業</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立於臺北市之公司、商業、所在地登記於本市之外國公司、財社團法人與學校</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助投資金額 10%、最高補助款 300 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">投資及培育依法於本市設立登記未滿 5 年之新創企業或創業團隊，包含資金投入、投後輔導、技術引進或商機媒合；創業團隊須於計畫執行期間內於本市完成登記。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>天使投資補助計畫書</li><li>公司、商業、學校或財（社）團法人核准設立登記、變更相關證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近一年營利事業所得稅與營業稅申報書；學校或財社團法人最近一年納稅證明資料</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/15" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/12" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div id="sub-inc-3"></div>
+
+<div id="sub-inc3-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">育成輔導</span>
+<h4>國際育成補助</h4>
+<div class="slogan">招攬及培育國際新創團隊落地臺北</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立於臺北市之公司、商業、所在地登記於本市之外國公司、財社團法人與學校</div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>最高補助款 300 萬元</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">招攬及培育國際新創團隊來本市發展，並協助各項落地資源介接，包含育成加速器引薦、提供工作空間、技術／投資／商機／人才媒合；國際團隊須於計畫執行期間內新增至少一位本國籍成員。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>國際育成補助計畫書</li><li>公司、商業、學校或財（社）團法人核准設立登記、變更相關證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近一年營利事業所得稅與營業稅申報書；學校或財社團法人最近一年納稅證明資料</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/16" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/13" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-info"><strong>差異化說明</strong>「<strong>創新育成</strong>」是培育自家或對接企業；「<strong>天使投資</strong>」要有實際投資金額（補助投資額10%）；「<strong>國際育成</strong>」要招攬國際團隊落地臺北。</div>
+</section>
+
+<section id="sub-subsidy">
+<h2 class="chapter">5. 獎勵補貼</h2>
+
+<div id="sub-subsidy-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">投資補貼</span>
+<h4>獎勵補貼（六大補貼項目）</h4>
+<div class="slogan">投資臺北市，投資標的須具創新潛力、並展現具體營運成效</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立於臺北市之公司、商號及國外分公司，<strong>新設立或新增資 1 年內</strong> 可提出申請</div></div>
+
+<div class="meta-row"><div class="label">勞工訓練費用</div><div class="value">最高 80 萬元；中高齡失業勞工逾原僱用 1%者可提高至 100 萬元</div></div>
+<div class="meta-row"><div class="label">勞工薪資補貼</div><div class="value">新增僱用設籍本市勞工，<strong>每人每月最高 1 萬元</strong>，補貼期間不超過一年，總金額最高 500 萬元</div></div>
+<div class="meta-row"><div class="label">房屋稅／地價稅</div><div class="value">坐落本市供投資案直接使用之房地，前 2 年全額補貼、後 3 年補貼 50%，總金額最高 <strong>5,000 萬元</strong></div></div>
+<div class="meta-row"><div class="label">私有房地租金</div><div class="value">最高補貼 50%、補貼期間最長 5 年，總金額最高 500 萬元</div></div>
+<div class="meta-row"><div class="label">融資利息</div><div class="value">年利率 2.5% 限度內，酌予補貼利息 2 年；每一投資案以一次為限，總金額最高 5,000 萬元</div></div>
+<div class="meta-row"><div class="label">市有房地租金減免</div><div class="value">租地建屋／既有房屋／設定地上權，興建期間租金全免、取得使用執照後減半計收 2-5 年</div></div>
+
+<div class="meta-row"><div class="label">申請文件</div><div class="value"><ol class="clean"><li>申請書</li><li>獎勵補貼計畫書</li><li>公司(商業)登記或變更證明文件</li><li>購置設備或技術之統一發票或相關證明文件（中小企業投資創新或經營改善滿百萬元者須檢附證明）</li><li>最近三年會計師簽證之相關財務報表</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>各申請獎勵項目之證明文件（如勞保名冊、不動產謄本、繳稅證明、租約、銀行融資契約等）</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/12" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/15" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-danger"><strong>重要提醒</strong>獎勵補貼是針對 <u>新設立或新增資 1 年內</u> 之企業，<strong>且投資標的須具創新潛力</strong>。它不是創新補助（不需要技術研發），而是補貼企業營運成本（房租、薪資、利息、稅金等）。</div>
+<div class="alert alert-info"><strong>常用查詢工具</strong>申請房地租金／房屋稅／地價稅補貼前，請企業先做 <a href="https://www.businesslocationinfo.gov.taipei/BLBQS/Home/Notice" target="_blank">營業場所土地使用分區管制與建築管理規定查詢</a>，確認場所合法。</div>
+</section>
+
+<section id="sub-advance">
+<h2 class="chapter">6. 新創拔尖補助</h2>
+
+<div id="sub-advance-card" class="sub-card">
+<div class="sub-card-head">
+<span class="badge-cat">拔尖加速</span>
+<h4>新創拔尖補助</h4>
+<div class="slogan">扶植成長期新創事業，邁向規模化與國際化（批次受理，產業局公告徵件）</div>
+</div>
+<div class="sub-card-body">
+<div class="meta-row"><div class="label">申請資格</div><div class="value">設立登記滿 <strong>1 年以上、未滿 8 年</strong> 之臺北市公司，且最近三年內累計獲得投資 <strong>新臺幣 500 萬元以上</strong></div></div>
+<div class="meta-row"><div class="label">補助額度</div><div class="value"><strong>三階段計畫合計補助最高新臺幣 1,500 萬元，依執行計畫領域申請補助經費</strong></div></div>
+<div class="meta-row"><div class="label">申請範疇</div><div class="value">申請人應一次提出三階段計畫：第一階段為「創新研發」計畫，第二、三階段得從「創新研發」、「創新加速」或「品牌建立」計畫中擇一申請。經審核通過者，一次核予三階段補助。</div></div>
+<div class="meta-row"><div class="label">應備文件</div><div class="value"><ol class="clean"><li>申請書</li><li>新創拔尖補助計畫書</li><li>公司登記或變更相關證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得用營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近三年內累計獲得 500 萬元以上「投資證明」（契約書、匯款單、投資前後股東清單）</li><li>投資者基本資料表（每一投資者）</li><li>投資者推薦書（累計投資者擇一）</li><li>投資者與申請人非為關係人聲明書及無陸資投資聲明書</li></ol></div></div>
+<div class="meta-row"><div class="label">官方頁面</div><div class="value">📖 <a href="https://www.industry-incentive.taipei/about/10" target="_blank">補助介紹</a>　｜　📥 <a href="https://www.industry-incentive.taipei/download/14" target="_blank">表單下載專區</a></div></div>
+</div>
+</div>
+<div class="alert alert-warning"><strong>新人重點</strong>新創拔尖補助是 <u>三階段一次審核</u> 的大型補助，金額可達 1,500 萬。企業要符合「設立 1-8 年 + 累積獲投 500 萬以上」雙重門檻。<strong>批次受理</strong>，請企業留意產業局公告徵件時程。</div>
+</section>
+
+<section id="process">
+<h2 class="chapter">申請完整流程</h2>
+<p>所有補助皆採 <strong>線上申請 + 紙本送件</strong>，標準流程共 6 大步驟：</p>
+
+<div class="flow">
+<div class="flow-step"><span class="num">1</span><h5>申請前準備</h5><p>備齊計畫書與應備文件</p></div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><span class="num">2</span><h5>送件申請</h5><p>線上送件 + 紙本掛號</p></div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><span class="num">3</span><h5>初審完成</h5><p>專案辦公室文件審查</p></div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><span class="num">4</span><h5>安排簡報審查</h5><p>會前 14 日通知</p></div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><span class="num">5</span><h5>分組簡報審查</h5><p>提供書審意見回覆</p></div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><span class="num">6</span><h5>審議核定</h5><p>大會決議、發核定函</p></div>
+</div>
+
+<div class="alert alert-info"><strong>官方流程圖（含平均處理天數）</strong>請企業參考 → <a href="https://www.industry-incentive.taipei/service/2" target="_blank">如何申請頁面</a></div>
+
+<h3 class="section-title">後續執行階段（核定通過後）</h3>
+<div class="vflow">
+<div class="vflow-item">
+<span class="step-tag">階段 1</span>
+<h5>第一期款請領</h5>
+<p>核定通過後 30 日內檢具修正後計畫書、撥款請領申請書、領據、履約保證金（創業/育成免附），請領 50% 補助款。
+📥 <a href="https://www.industry-incentive.taipei/download/16" target="_blank">第一期款表單下載</a></p>
+</div>
+<div class="vflow-item">
+<span class="step-tag">階段 2</span>
+<h5>實地查訪（期中查核）</h5>
+<p>計畫執行期間進行一次實地查訪，企業須準備期中報告、會計報告、原始憑證。
+📥 <a href="https://www.industry-incentive.taipei/download/17" target="_blank">實地查訪表單下載</a></p>
+</div>
+<div class="vflow-item">
+<span class="step-tag">階段 3</span>
+<h5>計畫變更（如需）</h5>
+<p>應於計畫執行結束 <strong>前 1 個月</strong>，以紙本函文向產業發展局申請變更（僅口頭／Email 無效）。重大變更須委員同意。</p>
+</div>
+<div class="vflow-item">
+<span class="step-tag">階段 4</span>
+<h5>結案及第二期款</h5>
+<p>結案審查通過後，繳交修正後總結報告書、會計師簽證查核報告，請領尾款（50%）。
+📥 <a href="https://www.industry-incentive.taipei/download/18" target="_blank">尾款表單下載</a></p>
+</div>
+</div>
+</section>
+
+<section id="online-apply">
+<h2 class="chapter">線上申請操作（申請人端）</h2>
+<p>當企業詢問怎麼線上送件，請依以下步驟引導：</p>
+
+<div class="vflow">
+<div class="vflow-item"><span class="step-tag">Step 1</span><h5>初次登入</h5><p>進入 <a href="https://www.industry-incentive.taipei/application/" target="_blank">線上申請入口</a> → 點選「申請帳號」→ 填寫申請人資料 → 收到帳號密碼通知信。</p>
+<div class="alert alert-warning" style="margin-top:8px;"><strong>重要</strong>同一公司／商業／外公在臺分公司，<u>系統以統編識別只能申請一組帳號</u>，未來再申請也用同一組。</div></div>
+
+<div class="vflow-item"><span class="step-tag">Step 2</span><h5>送出申請</h5><p>輸入「計畫基本資料」→「檢附書表」→「選擇檔案」→ 上傳完成的計畫書 → 點「送出申請」→ 收到送出通知信件。</p>
+<ul><li>計畫主持人與財務會計人 <strong>不得為同一人</strong></li><li>金額單位為 <strong>元</strong></li><li>有委外項目／房地租金請填寫與計畫書一致</li></ul></div>
+
+<div class="vflow-item"><span class="step-tag">Step 3</span><h5>等待受理</h5><p>專案辦公室受理後會發出「處理中通知信」，信件會顯示專案辦公室回覆期限。</p></div>
+
+<div class="vflow-item"><span class="step-tag">Step 4</span><h5>修正回覆（如有）</h5><p>若需修正，會收到「待修正計畫內容通知」，依專員建議修正後重新上傳，點「回覆修正意見」。</p></div>
+
+<div class="vflow-item"><span class="step-tag">Step 5</span><h5>用印寄回紙本</h5><p>確認無誤後系統會產出 <strong>具浮水印</strong> 之申請書及計畫書 → 印出 + 蓋章 + 備齊應備文件 → 紙本 1 份送專案辦公室掛號。</p>
+<div class="alert alert-danger" style="margin-top:8px;"><strong>關鍵提醒</strong>線上申請確認後，<u>仍須送出紙本文件申請才算完成遞件</u>！</div></div>
+</div>
+</section>
+
+<section id="forms-apply">
+<h2 class="chapter">表單下載專區（申請階段）</h2>
+<p>企業問「我要去哪裡下載申請書？」時，請直接傳對應連結，並提醒須選擇 <strong>DOC / ODT / PDF</strong> 格式。</p>
+
+<div class="dl-block">
+<h5>📋 共通文件（所有補助皆會用到）</h5>
+<div class="dl-item"><div class="icon">📄</div><div class="name">臺北市產業發展獎勵補助計畫申請簡介</div><a href="https://www.industry-incentive.taipei/download/4" target="_blank">查看</a></div>
+<div class="dl-item"><div class="icon">📄</div><div class="name">臺北市政府(產業發展局)第8屆審議委員會名單</div><a href="https://www.industry-incentive.taipei/download/19" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">📄</div><div class="name">公職人員利益衝突迴避切結書範本</div><a href="https://www.industry-incentive.taipei/download/15" target="_blank">至獎勵補貼專區</a></div>
+<div class="dl-item"><div class="icon">📄</div><div class="name">公職人員及關係人身分關係揭露表範本</div><a href="https://www.industry-incentive.taipei/download/15" target="_blank">至獎勵補貼專區</a></div>
+<div class="dl-item"><div class="icon">🔗</div><div class="name">營業場所土地使用分區管制與建築管理規定查詢</div><a href="https://www.businesslocationinfo.gov.taipei/BLBQS/Home/Notice" target="_blank">線上查詢</a></div>
+</div>
+
+<div class="dl-block">
+<h5>🎯 創業補助</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">創業補助 表單下載專區（含申請須知、申請書、計畫書、會計準則）</div><a href="https://www.industry-incentive.taipei/download/4" target="_blank">前往下載</a></div>
+</div>
+
+<div class="dl-block">
+<h5>🔬 研發補助</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">創新研發補助 表單</div><a href="https://www.industry-incentive.taipei/download/6" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">主題式研發補助 表單</div><a href="https://www.industry-incentive.taipei/download/7" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">創新加速補助 表單</div><a href="https://www.industry-incentive.taipei/download/8" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">研發補助 主分類（含申請須知）</div><a href="https://www.industry-incentive.taipei/download/5" target="_blank">前往下載</a></div>
+</div>
+
+<div class="dl-block">
+<h5>✨ 品牌建立補助</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">品牌建立補助 表單下載專區</div><a href="https://www.industry-incentive.taipei/download/9" target="_blank">前往下載</a></div>
+</div>
+
+<div class="dl-block">
+<h5>🌱 創新育成補助</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">創新育成補助 表單</div><a href="https://www.industry-incentive.taipei/download/11" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">天使投資補助 表單</div><a href="https://www.industry-incentive.taipei/download/12" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">國際育成補助 表單</div><a href="https://www.industry-incentive.taipei/download/13" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">📥</div><div class="name">創新育成補助 主分類</div><a href="https://www.industry-incentive.taipei/download/10" target="_blank">前往下載</a></div>
+</div>
+
+<div class="dl-block">
+<h5>💰 獎勵補貼</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">獎勵補貼 表單下載專區（含申請須知、申請書、計畫書）</div><a href="https://www.industry-incentive.taipei/download/15" target="_blank">前往下載</a></div>
+</div>
+
+<div class="dl-block">
+<h5>🚀 新創拔尖補助</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">新創拔尖補助 表單（含申請書、計畫書、投資者基本資料表、關係人聲明書）</div><a href="https://www.industry-incentive.taipei/download/14" target="_blank">前往下載</a></div>
+</div>
+</section>
+
+<section id="forms-exec">
+<h2 class="chapter">表單下載專區（執行階段）</h2>
+<p>核定通過後，企業將依序進入請款／查訪／結案三大階段，常用表單分類如下：</p>
+
+<div class="dl-block">
+<h5>💼 請領第一期款（依補助類別）</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">第一期款 主入口</div><a href="https://www.industry-incentive.taipei/download/16" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">🔬</div><div class="name">研發補助 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/21" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">💰</div><div class="name">獎勵補貼 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/22" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">✨</div><div class="name">品牌補助 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/23" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌱</div><div class="name">育成補助 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/24" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🎯</div><div class="name">創業補助 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/25" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">👼</div><div class="name">天使投資 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/26" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌍</div><div class="name">國際育成 第一期款表單</div><a href="https://www.industry-incentive.taipei/download/27" target="_blank">下載</a></div>
+</div>
+
+<div class="alert alert-info"><strong>第一期款主要文件</strong>請領申請書、請款領據、經費需求總表、存摺封面、銀行履約保證金（創業／創新育成／獎勵補貼免附）、膠裝版修正後計畫書一式三份。＜br＞請務必提醒企業看「<u>膠裝版修正後計畫書裝訂說明</u>」與「<u>請款領據填寫教學</u>」（皆位於該下載頁面中）。</div>
+
+<div class="dl-block">
+<h5>🔍 實地查訪作業（期中查核）</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">實地查訪 主入口</div><a href="https://www.industry-incentive.taipei/download/17" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">🔬</div><div class="name">研發補助 查訪表單</div><a href="https://www.industry-incentive.taipei/download/28" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">💰</div><div class="name">獎勵補貼 查訪表單</div><a href="https://www.industry-incentive.taipei/download/29" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">✨</div><div class="name">品牌補助 查訪表單</div><a href="https://www.industry-incentive.taipei/download/30" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌱</div><div class="name">育成補助 查訪表單</div><a href="https://www.industry-incentive.taipei/download/31" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🎯</div><div class="name">創業補助 查訪表單</div><a href="https://www.industry-incentive.taipei/download/32" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">👼</div><div class="name">天使投資 查訪表單</div><a href="https://www.industry-incentive.taipei/download/33" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌍</div><div class="name">國際育成 查訪表單</div><a href="https://www.industry-incentive.taipei/download/34" target="_blank">下載</a></div>
+</div>
+
+<div class="alert alert-info"><strong>實地查訪含 SOP 手冊</strong>「<u>臺北市獎勵補助計畫管考作業手冊</u>」（創業／研發／品牌／育成共用）就在實地查訪表單區下載，務必請企業詳閱。包含計畫期中會計報告 (XLSX)、期中報告格式 (DOCX)、各類變更表（預算／主持人／查核點／研發人員／消耗性器材／研發設備）。</div>
+
+<div class="dl-block">
+<h5>📊 請領尾款作業（結案）</h5>
+<div class="dl-item"><div class="icon">📥</div><div class="name">請領尾款 主入口</div><a href="https://www.industry-incentive.taipei/download/18" target="_blank">前往下載</a></div>
+<div class="dl-item"><div class="icon">🔬</div><div class="name">研發補助 尾款表單</div><a href="https://www.industry-incentive.taipei/download/35" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">💰</div><div class="name">獎勵補貼 尾款表單</div><a href="https://www.industry-incentive.taipei/download/36" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">✨</div><div class="name">品牌補助 尾款表單</div><a href="https://www.industry-incentive.taipei/download/37" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌱</div><div class="name">育成補助 尾款表單</div><a href="https://www.industry-incentive.taipei/download/38" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🎯</div><div class="name">創業補助 尾款表單</div><a href="https://www.industry-incentive.taipei/download/39" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">👼</div><div class="name">天使投資 尾款表單</div><a href="https://www.industry-incentive.taipei/download/40" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">🌍</div><div class="name">國際育成 尾款表單</div><a href="https://www.industry-incentive.taipei/download/41" target="_blank">下載</a></div>
+</div>
+
+<div class="alert alert-warning"><strong>結案重點提醒</strong>結案必備：會計師簽證查核報告（正本，每頁加蓋會計師騎縫章）、期中／期末會計報告、修正後總結報告書（膠裝一式 4 份）、結案簡報。＜br＞撥款審核程序最長 <strong>45 天</strong>，撥款公文送達後再算 5-7 個工作天款項入帳，請企業勿將補助款列為短期資金調度。</div>
+</section>
+
+<section id="forms-other">
+<h2 class="chapter">其他資源</h2>
+<div class="dl-block">
+<h5>📚 其他重要資訊</h5>
+<div class="dl-item"><div class="icon">📋</div><div class="name">臺北市產業發展獎勵及補助 審議委員會 第8屆名單</div><a href="https://www.industry-incentive.taipei/download/19" target="_blank">下載</a></div>
+<div class="dl-item"><div class="icon">📊</div><div class="name">歷年核定補助清冊</div><a href="https://www.industry-incentive.taipei/download/20" target="_blank">查看</a></div>
+<div class="dl-item"><div class="icon">🎯</div><div class="name">「因應美國關稅，加碼20%獎勵補助」專案</div><a href="https://www.industry-incentive.taipei/download/56" target="_blank">查看專案</a></div>
+</div>
+<div class="alert alert-success"><strong>加碼專案重點</strong>受美國關稅影響的企業，可額外享有 20% 加碼獎勵補助。詳細條件與適用範圍請參考 <a href="https://www.industry-incentive.taipei/download/56" target="_blank">專案頁面</a>。</div>
+</section>
+
+<section id="faq">
+<h2 class="chapter">常見問題 FAQ（標準應答）</h2>
+<p>以下整理自官網 <a href="https://www.industry-incentive.taipei/qa/" target="_blank">常見問題</a> 與長期接電話經驗，可直接念稿給企業。</p>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>「臺北市產業發展獎勵補助計畫」提供哪些獎勵或補助措施？</div>
+<div class="qa-a"><span class="amark">A</span><span>為促進產業發展、鼓勵創新與投資、輔導中小企業，臺北市政府制定「臺北市產業發展自治條例」，提供 <strong>創新創業、創新研發、創新加速、品牌加值、新創拔尖、育成天使</strong> 等創新補助，並提供以 <strong>租金、薪資、利息</strong> 等投資補貼，為臺北市企業提供全程全方位資源。詳細請見：<a href="https://www.industry-incentive.taipei/about/2" target="_blank">各項資源頁面</a>。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>計畫的收件期限為何？</div>
+<div class="qa-a"><span class="amark">A</span><span><ol><li><strong>創業、創新研發、創新加速、品牌建立、創新育成、獎勵補貼</strong>：只要資格符合、文件備齊，<strong>專案辦公室隨時受理，無收件期限、無梯次之分</strong>。</li><li><strong>主題式研發、新創拔尖補助</strong>：屬梯次型，受理收件期限與徵件領域由產業局公告。請企業關注 <a href="https://www.industry-incentive.taipei/" target="_blank">官網最新消息</a>。</li></ol></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>有沒有限制特定產業才能申請？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>不限行業別、不限產業別</strong>。只要計畫具創意、特色及發展潛力，符合申請資格、文件備齊，即可提出申請。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>申請是否有資本額門檻限制？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>無資本額門檻限制，亦無須與補助款相對應之自籌比例</strong>。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>有那麼多獎勵及補助措施，可以同時申請嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span><ol><li>申請人 <strong>以申請並執行 1 案為原則</strong>，並且包含執行中政府相關補助型計畫。</li><li>若核定通過，須等計畫執行結束後再提下一階段送件。</li><li>若核定不予通過，可修正計畫內容再次送件，<strong>一年申請 2 次為限</strong>。</li></ol></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>是否可與中央補助資源一同申請？</div>
+<div class="qa-a"><span class="amark">A</span><span>可以，但須注意兩大原則：<ol><li>不得以 <strong>相同標的</strong>（產品／技術／服務）重複申請其他政府補助</li><li><strong>核銷費用項目不得重複編列</strong></li></ol></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>創業補助的申請資格、補助額度與申請文件為何？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>申請資格</strong>：新設立 1 年內之臺北市公司或商業。<br><strong>補助額度</strong>：每案補助新臺幣 100 萬元，以總經費 50% 為上限。<br><strong>申請文件</strong>：申請書、創業補助計畫書、公司(商業)登記或變更證明文件、最近一期計畫人員之勞保或就業保險證明。<br>📥 <a href="https://www.industry-incentive.taipei/download/4" target="_blank">表單下載</a></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>創新研發、創新加速、主題式研發、品牌建立補助的申請文件為何？</div>
+<div class="qa-a"><span class="amark">A</span><span>四項補助的申請文件 <strong>幾乎相同</strong>：<ol><li>申請書</li><li>對應補助類別計畫書</li><li>公司(商業)登記或變更證明文件</li><li>最近一期計畫人員之勞保或就業保險證明</li><li>最近三年會計師簽證之相關財務報表（中小企業得以營利事業所得稅申報書替代）</li><li>最近一年營利事業所得稅與營業稅申報書</li><li>最近一年市場營運實績相關證明文件（擇一提供：營收不為零／新增資證明／第三方場域驗證證明）</li></ol></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>線上申請帳號可以申請幾組？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>同一公司／商業／外公在臺分公司及財社團法人等，僅能申請一組帳號</strong>，系統以統編識別。未來再申請仍使用本組帳號密碼。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>計畫主持人可以兼任財務會計嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>不行。</strong>計畫主持人與財務會計 <strong>不得由同一人擔任</strong>，計畫聯絡人為正式員工。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>線上送出後就完成了嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>還沒</strong>。線上申請確認後，系統會產出 <strong>具浮水印</strong> 之申請書及計畫書，企業須印出、用印、備妥附件後，<strong>紙本 1 份送至專案辦公室掛號</strong>才算完成遞件。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>什麼時候會收到補助款？</div>
+<div class="qa-a"><span class="amark">A</span><span>分兩期撥付：<ol><li><strong>第一期款（50%）</strong>：核定通過後 30 日內備妥請款文件，市府審核後撥款。</li><li><strong>第二期款（尾款 50%）</strong>：結案審查通過後請領，<strong>撥款審核程序最長 45 天</strong>，撥款公文送達後再算 5-7 個工作天款項入帳。請企業勿將補助款列為短期資金調度。</li></ol></span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>計畫執行中需要變更項目，怎麼辦？</div>
+<div class="qa-a"><span class="amark">A</span><span>請企業務必於 <strong>計畫執行結束前 1 個月</strong>，以 <strong>紙本函文</strong> 向產業發展局申請變更（僅以口頭、Email、紙本附件告知無效力）。重大變更（如總經費／計畫主持人／委外費用／查核點）須經主審委員同意。<br>📥 各類變更表在 <a href="https://www.industry-incentive.taipei/download/17" target="_blank">實地查訪作業下載區</a>。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>結案需要會計師簽證嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span><strong>需要</strong>。結案時須繳交：<ul><li>會計師簽證之查核報告 <strong>正本</strong>（每頁加蓋會計師騎縫章）</li><li>期中／期末會計報告</li><li>膠裝版修正後總結報告書一式 <strong>4 份</strong></li></ul>原始憑證請企業依會計法、商業會計法及審計法規定，<strong>保存 10 年</strong>。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>諮詢輔導怎麼預約？有限制次數嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span>請企業至 <a href="https://www.industry-incentive.taipei/counseling_form/" target="_blank">諮詢申請頁面</a> 預約，每場次 40 分鐘。每周一、四下午各 3 場次。<br><strong>每家公司原則每個申請案諮詢以 3 次為限</strong>。送件後下次再來諮詢可算新案。<br>⚠️ 廠商一旦正式送件後 <strong>不再提供諮詢</strong>，避免行政爭議。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>美國關稅加碼 20% 是什麼？</div>
+<div class="qa-a"><span class="amark">A</span><span>為協助受美國關稅影響的企業，本府推出「<strong>因應美國關稅，加碼 20% 獎勵補助</strong>」專案，符合條件的企業可額外享有 20% 加碼補助。詳細條件與適用範圍請查看 <a href="https://www.industry-incentive.taipei/download/56" target="_blank">專案頁面</a>。</span></div>
+</div>
+
+<div class="qa-item">
+<div class="qa-q"><span class="qmark">Q</span>外國公司可以申請嗎？</div>
+<div class="qa-a"><span class="amark">A</span><span>可以，但須為 <strong>所在地登記於本市之外國公司</strong>（即在臺分公司設於臺北市）。申請文件中「公司登記證明」改附「外國公司在臺分公司設立登記表或變更表」影本，並於申請書由 <strong>訴訟及非訴訟代理人簽章</strong>。</span></div>
+</div>
+</section>
+
+<section id="scripts">
+<h2 class="chapter">企業來電應對腳本</h2>
+<p>常見的企業諮詢情境，以下提供標準化開場與引導話術。</p>
+
+<h3 class="section-title">情境 A：企業第一次來電，不知道有什麼補助</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>你好，我想問你們臺北市政府的補助有什麼可以申請？</div>
+<div class="script-line you"><span class="who">你</span>您好！我們臺北市產業發展獎勵補助計畫總共有 <strong>六大類補助</strong>，包含創業、研發、品牌、創新育成、獎勵補貼，還有新創拔尖。請問貴公司目前的狀況是？方便讓我了解一下嗎？</div>
+<div class="script-line you"><span class="who">你</span>1. 公司成立多久了？<br>2. 是希望做研發、品牌建立、或補貼營運成本？<br>3. 目前是否在臺北市完成公司登記？</div>
+<div class="script-line you"><span class="who">你</span>了解後，我可以建議您適合哪一類補助。詳細的介紹也可以直接看官網：<a href="https://www.industry-incentive.taipei/about/2" target="_blank">https://www.industry-incentive.taipei/about/2</a></div>
+</div>
+
+<h3 class="section-title">情境 B：企業想知道自己適合哪一類補助</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>我們是 3 年前成立的新創，想要做 AI 模型開發，可以申請什麼？</div>
+<div class="script-line you"><span class="who">你</span>聽起來貴公司符合「<strong>創新研發補助</strong>」的條件 ─ 設立滿 1 年以上、有新技術或服務開發。最高補助 500 萬，補助比例 50%。</div>
+<div class="script-line you"><span class="who">你</span>建議您先看 → <a href="https://www.industry-incentive.taipei/about/13" target="_blank">創新研發補助介紹</a>，並下載申請須知：<a href="https://www.industry-incentive.taipei/download/6" target="_blank">https://www.industry-incentive.taipei/download/6</a></div>
+<div class="script-line you"><span class="who">你</span>另外，如果您的開發 <strong>已經完成小型場域驗證、準備加速放大</strong>，也可以考慮「<strong>創新加速補助</strong>」（最高 300 萬），請依貴公司階段選擇最合適的方案。</div>
+</div>
+
+<h3 class="section-title">情境 C：企業要下載申請書與計畫書</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>我要去哪裡下載申請書？</div>
+<div class="script-line you"><span class="who">你</span>請進入官網「下載專區」→「申請階段」→ 找到您要申請的補助類別。對應連結如下：<br>• 創業：<a href="https://www.industry-incentive.taipei/download/4" target="_blank">https://www.industry-incentive.taipei/download/4</a><br>• 研發：<a href="https://www.industry-incentive.taipei/download/5" target="_blank">https://www.industry-incentive.taipei/download/5</a><br>• 品牌：<a href="https://www.industry-incentive.taipei/download/9" target="_blank">https://www.industry-incentive.taipei/download/9</a><br>• 育成：<a href="https://www.industry-incentive.taipei/download/10" target="_blank">https://www.industry-incentive.taipei/download/10</a><br>• 獎勵補貼：<a href="https://www.industry-incentive.taipei/download/15" target="_blank">https://www.industry-incentive.taipei/download/15</a><br>• 新創拔尖：<a href="https://www.industry-incentive.taipei/download/14" target="_blank">https://www.industry-incentive.taipei/download/14</a></div>
+<div class="script-line you"><span class="who">你</span>每個下載頁都包含「<strong>申請須知 PDF、申請書 (DOC/ODT/PDF)、計畫書 (DOCX)、會計科目編列原則 PDF</strong>」，建議用 DOC 或 DOCX 編輯後再轉 PDF。</div>
+</div>
+
+<h3 class="section-title">情境 D：企業想知道怎麼線上送件</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>線上申請怎麼操作？</div>
+<div class="script-line you"><span class="who">你</span>請先到「線上申請入口」<a href="https://www.industry-incentive.taipei/application/" target="_blank">https://www.industry-incentive.taipei/application/</a></div>
+<div class="script-line you"><span class="who">你</span>第一次使用要先「申請帳號」，<strong>每家公司只能申請一組帳號</strong>（用統編識別）。帳號核發後就能登入填寫計畫基本資料、上傳計畫書、送出申請。</div>
+<div class="script-line you"><span class="who">你</span>送出後等我們專員審核，若有需修正會發信通知您。確認無誤後系統會產出<strong>有浮水印</strong>的申請書，您列印用印後，<strong>紙本 1 份要寄到專案辦公室掛號才算完成</strong>。</div>
+<div class="script-line you"><span class="who">你</span>地址：臺北市信義區市府路 1 號北區 2 樓（臺北市創業服務辦公室）。</div>
+</div>
+
+<h3 class="section-title">情境 E：企業想預約諮詢輔導</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>計畫書不會寫，可以找人協助嗎？</div>
+<div class="script-line you"><span class="who">你</span>可以！我們提供 1 對 1 諮詢輔導，每場 40 分鐘。請至 <a href="https://www.industry-incentive.taipei/counseling_form/" target="_blank">諮詢申請頁面</a> 預約時段，每周一、四下午各 3 場次。</div>
+<div class="script-line you"><span class="who">你</span>諮詢時間可以針對計畫書內容、會計科目編列、申請流程問問題。<strong>每個申請案以 3 次諮詢為原則</strong>。</div>
+<div class="script-line you"><span class="who">你</span><strong>提醒：</strong>一旦正式送件後就不再提供諮詢，避免行政爭議。所以建議在送件前先把問題都釐清。</div>
+</div>
+
+<h3 class="section-title">情境 F：核定通過、要請款的廠商</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>核定函收到了，第一期款怎麼請？</div>
+<div class="script-line you"><span class="who">你</span>恭喜！收到紙本核定通知後 30 日內要完成請款。請依下列順序準備：</div>
+<div class="script-line you"><span class="who">你</span>1. 依核定函的「結果通知」修正計畫書（修正內容請用黑色+粗體+底線標示），<strong>15 日內</strong> mail 電子檔給您的承辦窗口。<br>2. 計畫書經委員檢閱 OK 後，我們會 mail 通知您準備請款。<br>3. 依「撥款請領申請書」準備文件 + 依「計畫書裝訂說明」裝訂。<br>4. 先掃描 1 份請承辦人檢查無誤後再裝訂送市政府。</div>
+<div class="script-line you"><span class="who">你</span>表單下載：<a href="https://www.industry-incentive.taipei/download/16" target="_blank">https://www.industry-incentive.taipei/download/16</a>，務必看「<u>膠裝版修正後計畫書裝訂說明</u>」與「<u>請款領據填寫教學</u>」。</div>
+<div class="script-line you"><span class="who">你</span>履約保證金 = 第一期款 30%，期限至計畫結束後 3 個月止（創業、創新育成、獎勵補貼免附）。</div>
+</div>
+
+<h3 class="section-title">情境 G：執行中要計畫變更</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>計畫執行到一半，預算想調整，可以嗎？</div>
+<div class="script-line you"><span class="who">你</span>可以，<strong>但要符合三個原則</strong>：①符合原訂計畫目標、②不增加補助款、③不違背會計科目編列及查核準則。</div>
+<div class="script-line you"><span class="who">你</span>請於 <strong>計畫執行結束前 1 個月</strong>，以 <strong>紙本函文</strong> 向產業發展局申請（口頭、Email 都不算數）。</div>
+<div class="script-line you"><span class="who">你</span>各類變更表在 <a href="https://www.industry-incentive.taipei/download/17" target="_blank">實地查訪作業下載區</a>，包含：計畫預算變更表、計畫主持人顧問變更表、計畫查核點變更說明表、研發人員替換表、消耗性器材變更表、研發設備項目變更表等。</div>
+<div class="script-line you"><span class="who">你</span><strong>重大變更</strong>（如預算流用、委外費用變更、查核指標調整、更換計畫主持人）<strong>須經主審委員同意</strong>後才能送公文。</div>
+</div>
+
+<h3 class="section-title">情境 H：結案請款</h3>
+<div class="script">
+<div class="script-line client"><span class="who">企業</span>計畫快結束了，結案怎麼辦？</div>
+<div class="script-line you"><span class="who">你</span>結案前 3 週我們會發通知請您準備結案報告。流程為：① 提交結案報告及簡報電子檔 → ② 結案審查會 → ③ 補件（如需，最長 30 日）→ ④ 請領尾款。</div>
+<div class="script-line you"><span class="who">你</span>結案必備：<ul><li>會計師簽證 <strong>正本</strong>（每頁騎縫章）</li><li>修正後總結報告書（膠裝一式 <strong>4 份</strong>）</li><li>請領申請書、領據、存摺封面</li></ul></div>
+<div class="script-line you"><span class="who">你</span>表單下載：<a href="https://www.industry-incentive.taipei/download/18" target="_blank">https://www.industry-incentive.taipei/download/18</a>，務必看「<u>結案報告上傳系統教學</u>」與「<u>修正後總結報告書裝訂說明</u>」。</div>
+<div class="script-line you"><span class="who">你</span>撥款審核程序最長 45 天，撥款公文送達後再 5-7 個工作天款項入帳。</div>
+</div>
+</section>
+
+<section id="scenarios">
+<h2 class="chapter">常見情境處理</h2>
+
+<div class="card-grid">
+<div class="card">
+<h4>🚫 企業說「我可以同時申請好幾項補助嗎？」</h4>
+<p>回答：原則上「<strong>以申請並執行 1 案為原則</strong>」。執行中的政府補助計畫也算。但獎勵補貼跟其他創新補助可以分開申請（標的不重複）。建議引導企業先選最迫切的方案。</p>
+</div>
+
+<div class="card">
+<h4>🌐 企業說「我跟中央 SBIR 同時申請會被踢嗎？」</h4>
+<p>回答：<strong>可以同時申請</strong>，但有兩大紅線 ─ ① 不得以相同標的（產品／技術／服務）重複申請；② 核銷費用項目不得重複編列。提醒企業在計畫書中說明差異性。</p>
+</div>
+
+<div class="card">
+<h4>💼 企業說「我們公司不在臺北市，可以申請嗎？」</h4>
+<p>回答：<strong>不行</strong>。本計畫限「臺北市公司」或「外國公司在臺分公司設於臺北市」。請建議企業先確認公司登記地址，或考慮其他縣市政府／經濟部相關補助。</p>
+</div>
+
+<div class="card">
+<h4>📝 企業說「會計師簽證很貴，可以省嗎？」</h4>
+<p>回答：<strong>結案請款必須有會計師簽證之查核報告正本</strong>，這是法令規定。<br>但 <strong>申請階段</strong>，中小企業可以用「營利事業所得稅申報書」替代會計師簽證的財務報表。</p>
+</div>
+
+<div class="card">
+<h4>🏠 企業要申請房地租金補貼</h4>
+<p>回答：須先做 <a href="https://www.businesslocationinfo.gov.taipei/BLBQS/Home/Notice" target="_blank">營業場所土地使用分區管制與建築管理規定查詢</a>，確認地點符合法令規定且可明確劃分使用範圍。另外要備：不動產登記謄本、<strong>經公證之租賃契約</strong>、租金繳納證明。</p>
+</div>
+
+<div class="card">
+<h4>👥 企業說「我們是學校／研究法人」</h4>
+<p>回答：學校與財社團法人 <strong>限於申請「創新育成、天使投資、國際育成」三項補助</strong>，<u>不能申請</u> 創業、研發、品牌、獎勵補貼、新創拔尖。應附「主事務所設於本市」之證明。</p>
+</div>
+
+<div class="card">
+<h4>⏰ 企業問「我去年沒過，今年可以再申請嗎？」</h4>
+<p>回答：可以。「<strong>一年申請 2 次為限</strong>」。建議企業修正後再送，並可先預約諮詢輔導（同案 3 次以內）。</p>
+</div>
+
+<div class="card">
+<h4>📞 企業說「我直接打電話問你們專員可以嗎？」</h4>
+<p>回答：可以！服務專線：<strong>02-27208889</strong> 或 <strong>1999 轉 1429／1428</strong>。但 <strong>正式送件後不再提供諮詢</strong>，問題請在送件前釐清。書面諮詢請走 <a href="https://www.industry-incentive.taipei/counseling_form/" target="_blank">諮詢申請頁面</a>。</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="chapter">聯絡與外部資源</h2>
+
+<h3 class="section-title">專案辦公室</h3>
+<table>
+<tbody>
+<tr><th>單位</th><td>臺北市產業發展獎勵補助計畫專案辦公室</td></tr>
+<tr><th>地址</th><td>11008 臺北市信義區市府路 1 號北區 2 樓（臺北市創業服務辦公室）</td></tr>
+<tr><th>代表號</th><td>02-27208889</td></tr>
+<tr><th>市民熱線</th><td>1999 轉 <strong>1429、1428</strong>（外縣市請撥 02-27208889）</td></tr>
+<tr><th>意見信箱</th><td><a href="https://www.industry-incentive.taipei/contact/" target="_blank">https://www.industry-incentive.taipei/contact/</a></td></tr>
+<tr><th>FB粉絲頁</th><td><a href="https://www.facebook.com/StartUPTaipei/" target="_blank">StartUPTaipei</a></td></tr>
+</tbody>
+</table>
+
+<h3 class="section-title">官方主要連結</h3>
+<table>
+<thead><tr><th>類別</th><th>網址</th></tr></thead>
+<tbody>
+<tr><td>首頁</td><td><a href="https://www.industry-incentive.taipei/" target="_blank">https://www.industry-incentive.taipei/</a></td></tr>
+<tr><td>計畫介紹</td><td><a href="https://www.industry-incentive.taipei/about/1" target="_blank">https://www.industry-incentive.taipei/about/1</a></td></tr>
+<tr><td>各項資源</td><td><a href="https://www.industry-incentive.taipei/about/2" target="_blank">https://www.industry-incentive.taipei/about/2</a></td></tr>
+<tr><td>如何申請</td><td><a href="https://www.industry-incentive.taipei/service/2" target="_blank">https://www.industry-incentive.taipei/service/2</a></td></tr>
+<tr><td>線上申請</td><td><a href="https://www.industry-incentive.taipei/application/" target="_blank">https://www.industry-incentive.taipei/application/</a></td></tr>
+<tr><td>諮詢申請</td><td><a href="https://www.industry-incentive.taipei/counseling_form/" target="_blank">https://www.industry-incentive.taipei/counseling_form/</a></td></tr>
+<tr><td>常見問題</td><td><a href="https://www.industry-incentive.taipei/qa/" target="_blank">https://www.industry-incentive.taipei/qa/</a></td></tr>
+<tr><td>下載專區</td><td><a href="https://www.industry-incentive.taipei/download/1" target="_blank">申請階段</a>　/　<a href="https://www.industry-incentive.taipei/download/2" target="_blank">執行階段</a>　/　<a href="https://www.industry-incentive.taipei/download/3" target="_blank">其他資訊</a></td></tr>
+</tbody>
+</table>
+
+<h3 class="section-title">生態夥伴與相關資源（可推薦給企業）</h3>
+<div class="card-grid">
+<div class="card"><h4>臺北市政府產業發展局</h4><p>主管機關</p><a href="https://doed.gov.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>創業臺北 Startup@Taipei</h4><p>創業整合資訊平台</p><a href="https://startup.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>臺北市融資貸款申辦網</h4><p>合庫等專案優惠融資</p><a href="https://easyloan.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>臺北市投資服務辦公室</h4><p>投資輔導</p><a href="https://invest.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>臺北市數位企業發展中心</h4><p>數位轉型輔導</p><a href="https://dbc.gov.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>TOPS 台北好購</h4><p>商品／服務媒合平台</p><a href="https://tops.taipei/" target="_blank">前往網站</a></div>
+<div class="card"><h4>新創圓夢網</h4><p>經濟部中小企業創業輔導</p><a href="https://startup.sme.gov.tw" target="_blank">前往網站</a></div>
+<div class="card"><h4>選臺北</h4><p>臺北市產業亮點</p><a href="https://taipeiclassics.taipeicdd.taipei/" target="_blank">前往網站</a></div>
+</div>
+</section>
+
+<section id="checklist">
+<h2 class="chapter">新人能力檢核</h2>
+
+<div class="alert alert-success">
+<strong>第一週應熟悉項目</strong>
+<ul style="margin-left:20px;margin-top:8px;">
+<li>能說出 <strong>六大補助類別</strong> 的差異（創業／研發／品牌／育成／補貼／拔尖）</li>
+<li>能正確判斷企業適合哪一類補助（依設立年限、產業階段）</li>
+<li>熟悉「<strong>不限產業／不限資本額／1 年限申請 2 次</strong>」三大原則</li>
+<li>知道線上申請入口、諮詢申請、下載專區的網址</li>
+<li>能說明「線上申請後仍須紙本掛號才算完成」</li>
+</ul>
+</div>
+
+<div class="alert alert-success">
+<strong>第一個月應上手項目</strong>
+<ul style="margin-left:20px;margin-top:8px;">
+<li>能獨立完成電話諮詢，引導企業至正確下載頁面</li>
+<li>熟悉每個補助的 <strong>申請文件清單</strong>（特別是研發類七大文件）</li>
+<li>能說明創新研發、創新加速、主題式研發的差異</li>
+<li>熟悉獎勵補貼的六大項目與額度上限</li>
+<li>能處理「同時申請中央／地方」「外國公司在臺分公司」等變化情境</li>
+</ul>
+</div>
+
+<div class="alert alert-success">
+<strong>三個月內應具備能力</strong>
+<ul style="margin-left:20px;margin-top:8px;">
+<li>能引導廠商完成第一期款請款（含履約保證金辦理）</li>
+<li>能解釋計畫變更程序、判斷哪些須委員同意</li>
+<li>能說明結案會計師簽證、修正後總結報告書裝訂規範</li>
+<li>能應對異常情境：進度落後、不通過、訴願等</li>
+<li>熟悉「<u>因應美國關稅，加碼 20% 獎勵補助</u>」等特別專案</li>
+</ul>
+</div>
+
+<h3 class="section-title">關鍵數字記憶卡</h3>
+<div class="stats">
+<div class="stat"><div class="num">50%</div><div class="label">補助比例上限（多數補助）</div></div>
+<div class="stat"><div class="num">30 日</div><div class="label">核定後請款期限</div></div>
+<div class="stat"><div class="num">30%</div><div class="label">履約保證金比例</div></div>
+<div class="stat"><div class="num">45 天</div><div class="label">尾款撥款審核期</div></div>
+<div class="stat"><div class="num">3 次</div><div class="label">每案諮詢上限</div></div>
+<div class="stat"><div class="num">2 次</div><div class="label">一年送件上限</div></div>
+<div class="stat"><div class="num">10 年</div><div class="label">原始憑證保存</div></div>
+<div class="stat"><div class="num">5%</div><div class="label">社會回饋占比上限</div></div>
+</div>
+</section>
+
+<footer>
+<p>本手冊整理自 <a href="https://www.industry-incentive.taipei/" target="_blank">臺北市產業發展獎勵補助計畫官方網站</a>，所有連結均指向官方原始頁面。</p>
+<p>編製目的：協助專案辦公室新進同仁快速掌握計畫內容與企業應對。內容如有更新，<strong>請以官網最新公告為準</strong>。</p>
+<p>客服電話：02-27208889 ｜ 1999 轉 1429／1428</p>
+</footer>
+</main>
+</div>
+
+<script>
+(function(){
+var toggle=document.getElementById('menuToggle');
+var sidebar=document.getElementById('sidebar');
+var overlay=document.getElementById('menuOverlay');
+function openM(){sidebar.classList.add('active');overlay.classList.add('active');toggle.innerHTML='✕';}
+function closeM(){sidebar.classList.remove('active');overlay.classList.remove('active');toggle.innerHTML='☰';}
+toggle.addEventListener('click',function(){sidebar.classList.contains('active')?closeM():openM();});
+overlay.addEventListener('click',closeM);
+sidebar.querySelectorAll('nav a').forEach(function(l){l.addEventListener('click',function(){if(window.innerWidth<=768)closeM();});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeM();});
+})();
+
+(function(){
+var input=document.getElementById('searchInput');
+var clearBtn=document.getElementById('searchClear');
+var results=document.getElementById('searchResults');
+if(!input)return;
+var index=[];
+document.querySelectorAll('main section').forEach(function(section){
+  var sid=section.id;
+  var chEl=section.querySelector('h2.chapter');
+  var chTitle=chEl?chEl.textContent.trim():'';
+  if(chEl){index.push({section:chTitle,title:chTitle,text:chTitle,element:chEl,id:sid});}
+  section.querySelectorAll('h3.section-title').forEach(function(h3){
+    var subtitle=h3.textContent.trim();
+    var text=subtitle;
+    var sib=h3.nextElementSibling;
+    while(sib&&sib.tagName!=='H3'){text+=' '+(sib.textContent||'');sib=sib.nextElementSibling;}
+    index.push({section:chTitle,title:subtitle,text:text.replace(/\s+/g,' ').trim(),element:h3,id:sid});
+  });
+  section.querySelectorAll('h4').forEach(function(h4){
+    var subtitle=h4.textContent.trim();
+    var text=subtitle;
+    var p=h4.parentElement;
+    if(p)text+=' '+(p.textContent||'');
+    index.push({section:chTitle,title:subtitle,text:text.replace(/\s+/g,' ').trim(),element:h4,id:sid});
+  });
+  section.querySelectorAll('.qa-item').forEach(function(qa){
+    var q=qa.querySelector('.qa-q');
+    var a=qa.querySelector('.qa-a');
+    if(q){
+      var qtext=q.textContent.replace(/^Q/,'').trim();
+      var atext=a?a.textContent.replace(/^A/,'').trim():'';
+      index.push({section:chTitle+' › FAQ',title:qtext,text:qtext+' '+atext,element:qa,id:sid});
+    }
+  });
+});
+
+function esc(s){return s.replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function escRe(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function hl(t,q){if(!q)return esc(t);var e=esc(t);var r=new RegExp('('+escRe(esc(q))+')','gi');return e.replace(r,'<mark>$1</mark>');}
+function snip(t,q,len){len=len||100;if(!q)return t.substring(0,len);var lo=t.toLowerCase();var p=lo.indexOf(q.toLowerCase());if(p<0)return t.substring(0,len);var s=Math.max(0,p-30);var e=Math.min(t.length,p+q.length+len-30);var out=t.substring(s,e);if(s>0)out='…'+out;if(e<t.length)out=out+'…';return out;}
+
+function search(query){
+  query=query.trim();
+  if(!query){results.classList.remove('visible');results.innerHTML='';return;}
+  var q=query.toLowerCase();
+  var matches=[];
+  index.forEach(function(en){
+    var lo=en.text.toLowerCase();
+    var p=lo.indexOf(q);
+    if(p>=0){
+      var sc=0;
+      if(en.title.toLowerCase().indexOf(q)>=0)sc+=100;
+      sc+=Math.max(0,50-p/10);
+      matches.push({entry:en,score:sc,pos:p});
+    }
+  });
+  matches.sort(function(a,b){return b.score-a.score;});
+  var seen={};
+  matches=matches.filter(function(m){var k=m.entry.id+'||'+m.entry.title;if(seen[k])return false;seen[k]=true;return true;});
+  var top=matches.slice(0,30);
+  if(top.length===0){
+    results.innerHTML='<div class="search-empty">找不到符合「'+esc(query)+'」的內容<br><br><span style="font-size:12px;color:#cbd5e1;">試試：創業、研發、品牌、補貼、第一期款、變更、結案、會計師</span></div>';
+    results.classList.add('visible');return;
+  }
+  var html='<div class="search-stats">找到 <strong>'+matches.length+'</strong> 筆結果'+(matches.length>30?'，顯示前30筆':'')+'</div>';
+  top.forEach(function(m,i){
+    var en=m.entry;
+    html+='<a class="search-result-item" data-idx="'+index.indexOf(en)+'">';
+    html+='<div class="search-result-section">'+esc(en.section)+'</div>';
+    html+='<div class="search-result-title">'+hl(en.title,query)+'</div>';
+    html+='<div class="search-result-snippet">'+hl(snip(en.text,query),query)+'</div>';
+    html+='</a>';
+  });
+  results.innerHTML=html;
+  results.classList.add('visible');
+  results.querySelectorAll('.search-result-item').forEach(function(it){
+    it.addEventListener('click',function(e){e.preventDefault();jumpTo(parseInt(it.getAttribute('data-idx')));});
+  });
+}
+
+function jumpTo(idx){
+  var en=index[idx];if(!en)return;
+  var target=en.element;
+  results.classList.remove('visible');
+  var rect=target.getBoundingClientRect();
+  var top=window.pageYOffset+rect.top-90;
+  window.scrollTo({top:top,behavior:'smooth'});
+  target.classList.remove('search-target-flash');
+  void target.offsetWidth;
+  target.classList.add('search-target-flash');
+  setTimeout(function(){target.classList.remove('search-target-flash');},2100);
+}
+
+var dt;
+input.addEventListener('input',function(){
+  clearTimeout(dt);
+  var v=input.value;
+  clearBtn.classList.toggle('visible',v.length>0);
+  dt=setTimeout(function(){search(v);},150);
+});
+clearBtn.addEventListener('click',function(){input.value='';clearBtn.classList.remove('visible');results.classList.remove('visible');input.focus();});
+
+var sel=-1;
+input.addEventListener('keydown',function(e){
+  var its=results.querySelectorAll('.search-result-item');
+  if(e.key==='ArrowDown'&&its.length){e.preventDefault();sel=Math.min(sel+1,its.length-1);upd(its);}
+  else if(e.key==='ArrowUp'&&its.length){e.preventDefault();sel=Math.max(sel-1,-1);upd(its);}
+  else if(e.key==='Enter'&&its.length){e.preventDefault();(sel>=0?its[sel]:its[0]).click();}
+  else if(e.key==='Escape'){input.value='';clearBtn.classList.remove('visible');results.classList.remove('visible');input.blur();}
+});
+function upd(its){its.forEach(function(it,i){it.classList.toggle('active',i===sel);if(i===sel)it.scrollIntoView({block:'nearest'});});}
+
+document.addEventListener('click',function(e){if(!e.target.closest('.search-wrap')){results.classList.remove('visible');}});
+document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();input.focus();input.select();}});
+})();
+</script>
+</body>
+</html>
